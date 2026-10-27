@@ -1,10 +1,11 @@
 name: CI
 
+# Roda em todo pull request para main (o push em main é coberto pelo workflow de deploy).
+# Não roda em push de branch para evitar execução em dobro (push + pull_request) no mesmo commit.
 on:
   pull_request:
     branches: [main]
-  push:
-    branches-ignore: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
