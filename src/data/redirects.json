@@ -1,0 +1,16 @@
+{
+  "_comentario": "URLs do site antigo (WordPress/WooCommerce) → URLs novas. O build gera uma página de redirecionamento para cada entrada e também o arquivo _redirects (Netlify/Cloudflare Pages).",
+  "/sobre-nos/": "/sobre/",
+  "/categoria-produto/toalhasplast/": "/produtos/toalhas-de-mesa-com-forro/",
+  "/categoria-produto/passadeiras/": "/produtos/passadeiras-de-pvc/",
+  "/categoria-produto/tecidos-de-moda/": "/produtos/",
+  "/produto/carpete-para-eventos/": "/produtos/carpete-para-eventos/",
+  "/produto/toalha-plastica-exemplo/": "/produtos/toalhas-de-mesa-com-forro/",
+  "/produto/toalha-mesa-impermeavel-copia/": "/produtos/toalhas-de-mesa-com-forro/",
+  "/produto/toalha-mesa-impermeavel-copia-2/": "/produtos/toalhas-de-mesa-com-forro/",
+  "/produto/toalha-mesa-impermeavel-copia-3/": "/produtos/toalhas-de-mesa-dupla-face/",
+  "/produto/passadeira-pvc/": "/produtos/passadeiras-de-pvc/",
+  "/produto/passadeira-pvc-copia/": "/produtos/passadeiras-de-pvc/",
+  "/produto/tecido-para-roupas/": "/produtos/",
+  "/produto/tecido-para-roupas-copia/": "/produtos/"
+}

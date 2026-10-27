@@ -1,0 +1,27 @@
+# Build output
+dist/
+
+# Dependencies (the project has none, but keep the rule for the future)
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Editor / OS noise
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temp files
+*.log
+npm-debug.log*
+*.tmp
+
+# Local tooling
+.claude/

@@ -1,0 +1,596 @@
+[
+  {
+    "slug": "passadeiras-de-pvc",
+    "name": "Passadeiras de PVC",
+    "shortName": "Passadeiras de PVC",
+    "title": "Passadeira de PVC em rolo 45 cm e 65 cm no atacado | Ameritex",
+    "description": "Passadeira de PVC antiderrapante em rolo de 15 m, larguras 45 cm e 65 cm, 700 g/m². 31 estampas e cores, incluindo linha pet. Importação direta e venda no atacado.",
+    "h1": "Passadeiras de PVC em rolo",
+    "lead": "Tapete passadeira de PVC flexível, vendido em rolo de 15 metros nas larguras 45 cm e 65 cm. Estampas, cores lisas e linha pet para cozinha, banheiro, área de serviço e comércio.",
+    "heroImage": "categorias/passadeiras-de-pvc-expositor.jpg",
+    "heroAlt": "Expositor de passadeiras de PVC Ameritex com rolos estampados",
+    "cardImage": "produtos/passadeiras-de-pvc/85001-c4.jpg",
+    "variantNoun": "estampas e cores",
+    "highlights": ["Rolo com 15 m · larguras 45 cm e 65 cm", "100% PVC · 700 g/m²", "31 estampas e cores, com linha pet", "Expositor de rolos para o ponto de venda"],
+    "related": ["toalhas-de-mesa-com-forro", "forro-para-gavetas-e-armarios", "grama-artificial"],
+    "lines": [
+      {
+        "code": "85001",
+        "name": "Passadeira de PVC 45 cm",
+        "summary": "A largura mais vendida: 45 cm, ideal para corredores de cozinha, frente de pia, box, área de serviço e balcões. Rolo com 15 m, cortado na medida pelo lojista.",
+        "material": "PVC",
+        "countryOfOrigin": "China",
+        "specs": [
+          ["Apresentação", "Rolo com 15 m de comprimento"],
+          ["Largura", "45 cm"],
+          ["Composição", "100% PVC"],
+          ["Gramatura", "700 g/m²"],
+          ["País de origem", "China"],
+          ["Venda", "Por rolo fechado"]
+        ],
+        "variantLabel": "Estampas e cores",
+        "variants": [
+          { "code": "85001 C1", "name": "Geométrico marrom", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c1.jpg" },
+          { "code": "85001 C2", "name": "Abstrato amarelo", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c2.jpg" },
+          { "code": "85001 C3", "name": "Losangos terracota", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c3.jpg" },
+          { "code": "85001 C4", "name": "Folhas bege", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c4.jpg" },
+          { "code": "85001 C5", "name": "Círculos verdes", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c5.jpg" },
+          { "code": "85001 C6", "name": "Listras terra", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c6.jpg" },
+          { "code": "85001 C7", "name": "Mandalas verde-água", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c7.jpg" },
+          { "code": "85001 C8", "name": "Pastilhas verde e bege", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c8.jpg" },
+          { "code": "85001 C9", "name": "Triângulos coloridos", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c9.jpg" },
+          { "code": "85001 C10", "name": "Textura marrom", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c10.jpg" },
+          { "code": "85001 C11", "name": "Madeira cinza", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c11.jpg" },
+          { "code": "85001 C12", "name": "Madeira escura", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c12.jpg" },
+          { "code": "85001 C13", "name": "Pedra canjiquinha", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c13.jpg" },
+          { "code": "85001 C14", "name": "Arabesco bege", "group": "Estampadas", "image": "produtos/passadeiras-de-pvc/85001-c14.jpg" },
+          { "code": "85001 C15", "name": "Marrom", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85001-c15.jpg" },
+          { "code": "85001 C16", "name": "Cinza", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85001-c16.jpg" },
+          { "code": "85001 C17", "name": "Preto", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85001-c17.jpg" },
+          { "code": "85001 C18", "name": "Vermelho", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85001-c18.jpg" },
+          { "code": "85001 C19", "name": "Azul", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85001-c19.jpg" },
+          { "code": "85001 C20", "name": "Verde", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85001-c20.jpg" },
+          { "code": "85001 C21", "name": "Chumbo", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85001-c21.jpg" },
+          { "code": "85001 D1", "name": "Pet – gatinhos azul", "group": "Linha pet", "image": "produtos/passadeiras-de-pvc/85001-d1.jpg" },
+          { "code": "85001 D2", "name": "Pet – ossinhos cinza", "group": "Linha pet", "image": "produtos/passadeiras-de-pvc/85001-d2.jpg" },
+          { "code": "85001 D3", "name": "Pet – patinhas e corações rosa", "group": "Linha pet", "image": "produtos/passadeiras-de-pvc/85001-d3.jpg" },
+          { "code": "85001 D4", "name": "Pet – patinhas coloridas", "group": "Linha pet", "image": "produtos/passadeiras-de-pvc/85001-d4.jpg" },
+          { "code": "85001 D5", "name": "Pet – patinhas azul-petróleo", "group": "Linha pet", "image": "produtos/passadeiras-de-pvc/85001-d5.jpg" },
+          { "code": "85001 D6", "name": "Pet – ossinhos azul", "group": "Linha pet", "image": "produtos/passadeiras-de-pvc/85001-d6.jpg" }
+        ]
+      },
+      {
+        "code": "85006",
+        "name": "Passadeira de PVC 65 cm",
+        "summary": "Largura maior, em cores lisas, para corredores, entradas de loja, áreas de circulação, depósitos e usos profissionais. Rolo com 15 m.",
+        "material": "PVC",
+        "countryOfOrigin": "China",
+        "specs": [
+          ["Apresentação", "Rolo com 15 m de comprimento"],
+          ["Largura", "65 cm"],
+          ["Composição", "100% PVC"],
+          ["Gramatura", "700 g/m²"],
+          ["País de origem", "China"],
+          ["Venda", "Por rolo fechado"]
+        ],
+        "variantLabel": "Cores",
+        "variants": [
+          { "code": "85006 C14", "name": "Marrom", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85006-c14.jpg" },
+          { "code": "85006 C15", "name": "Cinza", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85006-c15.jpg" },
+          { "code": "85006 C16", "name": "Preto", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85006-c16.jpg" },
+          { "code": "85006 C17", "name": "Chumbo", "group": "Lisas", "image": "produtos/passadeiras-de-pvc/85006-c17.jpg" }
+        ]
+      }
+    ],
+    "faq": [
+      { "q": "A passadeira de PVC é antiderrapante?", "a": "Sim. A superfície canelada em relevo e a base de PVC flexível aumentam a aderência ao piso e ao pé, o que torna a passadeira indicada para áreas que ficam molhadas, como frente de pia, box, lavanderia e entradas de loja." },
+      { "q": "Como o lojista vende a passadeira: por metro ou por rolo?", "a": "A Ameritex vende o rolo fechado de 15 m. No ponto de venda, o lojista costuma vender por metro linear, cortando na medida que o cliente pede. O expositor de rolos facilita a exposição e o corte." },
+      { "q": "Qual a diferença entre a passadeira de 45 cm e a de 65 cm?", "a": "Apenas a largura e a paleta. A 45 cm (código 85001) tem 27 opções, com estampas, cores lisas e linha pet. A 65 cm (código 85006) vem em quatro cores lisas e é mais usada em corredores, entradas e áreas comerciais." },
+      { "q": "Pode usar em área externa?", "a": "O PVC resiste a água e é fácil de lavar, por isso funciona bem em varandas cobertas, áreas de serviço e garagens. Em áreas com sol direto e constante, recomende ao cliente que verifique o desbotamento ao longo do tempo, como em qualquer produto plástico." },
+      { "q": "Como limpar a passadeira de PVC?", "a": "Basta água e sabão neutro, com pano ou escova macia. Não é necessário produto especial. Evite solventes e alvejantes concentrados, que podem manchar a estampa." }
+    ]
+  },
+  {
+    "slug": "toalhas-de-mesa-com-forro",
+    "name": "Toalhas de mesa plásticas com forro",
+    "shortName": "Toalhas com forro",
+    "title": "Toalha de mesa plástica com forro em rolo 1,40 m | Ameritex",
+    "description": "Toalha de mesa plástica térmica com forro: PVC estampado sobre base de polipropileno, 185 g/m², rolo de 30 m x 1,40 m. 17 estampas no atacado com importação direta.",
+    "h1": "Toalhas de mesa plásticas com forro",
+    "lead": "Toalha térmica de PVC com forro de polipropileno, impermeável e fácil de limpar. Rolo de 30 metros por 1,40 m de largura em 17 estampas para cozinha, festas e comércio.",
+    "heroImage": "categorias/toalhas-de-mesa-expositor.jpg",
+    "heroAlt": "Expositor de toalhas de mesa plásticas Ameritex com rolos estampados",
+    "cardImage": "produtos/toalhas-de-mesa-com-forro/85002-b2.jpg",
+    "variantNoun": "estampas",
+    "highlights": ["Rolo com 30 m · largura 1,40 m", "73% PVC + 27% polipropileno · 185 g/m²", "17 estampas: xadrez, frutas, cozinha, infantil", "Expositor de rolos para o ponto de venda"],
+    "related": ["toalhas-de-mesa-dupla-face", "plastico-cristal", "passadeiras-de-pvc"],
+    "lines": [
+      {
+        "code": "85002",
+        "name": "Toalha de mesa com forro 1,40 m",
+        "summary": "A toalha plástica clássica do varejo: face de PVC estampado e verso com forro de polipropileno (TNT), que dá corpo, evita que a toalha escorregue e protege a mesa. Vendida em rolo; o lojista corta na metragem que o cliente pede.",
+        "material": "PVC com forro de polipropileno",
+        "countryOfOrigin": "China",
+        "specs": [
+          ["Apresentação", "Rolo com 30 m de comprimento"],
+          ["Largura", "1,40 m"],
+          ["Composição", "73% PVC + 27% polipropileno"],
+          ["Gramatura", "185 g/m²"],
+          ["País de origem", "China"],
+          ["Venda", "Por rolo fechado"]
+        ],
+        "variantLabel": "Estampas",
+        "variants": [
+          { "code": "85002 B1", "name": "Círculos coloridos", "group": "Cozinha e frutas", "image": "produtos/toalhas-de-mesa-com-forro/85002-b1.jpg" },
+          { "code": "85002 B2", "name": "Frutas tropicais", "group": "Cozinha e frutas", "image": "produtos/toalhas-de-mesa-com-forro/85002-b2.jpg" },
+          { "code": "85002 B3", "name": "Cozinha em cinza", "group": "Cozinha e frutas", "image": "produtos/toalhas-de-mesa-com-forro/85002-b3.jpg" },
+          { "code": "85002 B4", "name": "Xadrez verde", "group": "Xadrez", "image": "produtos/toalhas-de-mesa-com-forro/85002-b4.jpg" },
+          { "code": "85002 B5", "name": "Xadrez vermelho", "group": "Xadrez", "image": "produtos/toalhas-de-mesa-com-forro/85002-b5.jpg" },
+          { "code": "85002 B6", "name": "Xadrez azul", "group": "Xadrez", "image": "produtos/toalhas-de-mesa-com-forro/85002-b6.jpg" },
+          { "code": "85002 B17", "name": "Xadrez preto", "group": "Xadrez", "image": "produtos/toalhas-de-mesa-com-forro/85002-b17.jpg" },
+          { "code": "85002 B7", "name": "Xícaras e peras", "group": "Cozinha e frutas", "image": "produtos/toalhas-de-mesa-com-forro/85002-b7.jpg" },
+          { "code": "85002 B8", "name": "Corujas cinza", "group": "Bichinhos", "image": "produtos/toalhas-de-mesa-com-forro/85002-b8.jpg" },
+          { "code": "85002 B9", "name": "Patchwork colorido", "group": "Florais e patchwork", "image": "produtos/toalhas-de-mesa-com-forro/85002-b9.jpg" },
+          { "code": "85002 B10", "name": "Corações patchwork", "group": "Florais e patchwork", "image": "produtos/toalhas-de-mesa-com-forro/85002-b10.jpg" },
+          { "code": "85002 B11", "name": "Frutas quadriculado", "group": "Cozinha e frutas", "image": "produtos/toalhas-de-mesa-com-forro/85002-b11.jpg" },
+          { "code": "85002 B12", "name": "Galinhas rosa", "group": "Bichinhos", "image": "produtos/toalhas-de-mesa-com-forro/85002-b12.jpg" },
+          { "code": "85002 B13", "name": "Corujas laranja", "group": "Bichinhos", "image": "produtos/toalhas-de-mesa-com-forro/85002-b13.jpg" },
+          { "code": "85002 B14", "name": "Ovelhas bege", "group": "Bichinhos", "image": "produtos/toalhas-de-mesa-com-forro/85002-b14.jpg" },
+          { "code": "85002 B15", "name": "Potes e xadrez preto", "group": "Cozinha e frutas", "image": "produtos/toalhas-de-mesa-com-forro/85002-b15.jpg" },
+          { "code": "85002 B16", "name": "Girassóis", "group": "Florais e patchwork", "image": "produtos/toalhas-de-mesa-com-forro/85002-b16.jpg" }
+        ]
+      }
+    ],
+    "faq": [
+      { "q": "O que é o forro da toalha plástica?", "a": "É uma camada de polipropileno não tecido (TNT) laminada no verso do PVC. Ela dá corpo à toalha, evita que escorregue na mesa, reduz o ruído e protege o tampo. É o que o mercado chama de toalha térmica." },
+      { "q": "A toalha com forro é impermeável?", "a": "Sim. A face de PVC é impermeável e não absorve líquidos: um derramamento é removido com pano úmido. Por isso é a escolha para cozinhas, bares, lanchonetes e festas." },
+      { "q": "Qual a metragem que o lojista vende para o consumidor?", "a": "Depende da mesa. Para uma mesa de 4 lugares, costuma-se cortar 1,40 m a 1,60 m; para 6 lugares, 2,00 m; para 8 lugares, 2,50 m. A largura de 1,40 m cobre a maioria das mesas de jantar." },
+      { "q": "Pode colocar panela quente sobre a toalha?", "a": "Não diretamente. Como qualquer toalha plástica, o PVC pode deformar com calor intenso. Oriente o cliente a usar descanso de panela." },
+      { "q": "Como conservar a toalha?", "a": "Limpeza com pano úmido e sabão neutro. Não lavar na máquina, não passar a ferro e evitar dobras vincadas prolongadas; guardar enrolada preserva a toalha por mais tempo." }
+    ]
+  },
+  {
+    "slug": "toalhas-de-mesa-dupla-face",
+    "name": "Toalhas de mesa dupla face",
+    "shortName": "Toalhas dupla face",
+    "title": "Toalha de mesa dupla face de PVC em rolo 30 m | Ameritex",
+    "description": "Toalha de mesa plástica dupla face: estampa decorativa na frente e xadrez no verso, 100% PVC, 174 g/m², rolo de 30 m x 1,40 m. 16 combinações no atacado.",
+    "h1": "Toalhas de mesa dupla face",
+    "lead": "Duas toalhas em uma: estampa temática de um lado e xadrez combinando do outro, 100% PVC. Rolo de 30 metros por 1,40 m em 16 combinações para cozinha, festas e comércio.",
+    "heroImage": "categorias/toalhas-de-mesa-expositor.jpg",
+    "heroAlt": "Expositor de toalhas de mesa plásticas Ameritex com rolos estampados",
+    "cardImage": "produtos/toalhas-de-mesa-dupla-face/85003-b2.jpg",
+    "variantNoun": "combinações",
+    "highlights": ["Rolo com 30 m · largura 1,40 m", "100% PVC · 174 g/m²", "Frente estampada + verso xadrez", "16 combinações de estampa e cor"],
+    "related": ["toalhas-de-mesa-com-forro", "plastico-cristal", "passadeiras-de-pvc"],
+    "lines": [
+      {
+        "code": "85003",
+        "name": "Toalha de mesa dupla face 1,40 m",
+        "summary": "Toalha 100% PVC com impressão nos dois lados: uma face com estampa temática (cozinha, frutas, florais, bichinhos) e a outra com xadrez na cor que combina. O cliente escolhe o lado conforme a ocasião. O círculo em cada foto mostra o verso.",
+        "material": "PVC",
+        "countryOfOrigin": "China",
+        "specs": [
+          ["Apresentação", "Rolo com 30 m de comprimento"],
+          ["Largura", "1,40 m"],
+          ["Composição", "100% PVC"],
+          ["Gramatura", "174 g/m²"],
+          ["Faces", "Estampa decorativa + xadrez no verso"],
+          ["País de origem", "China"],
+          ["Venda", "Por rolo fechado"]
+        ],
+        "variantLabel": "Combinações (frente e verso)",
+        "variants": [
+          { "code": "85003 B1", "name": "Café · verso xadrez marrom", "group": "Cozinha", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b1.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b1-verso.jpg" },
+          { "code": "85003 B2", "name": "Churrasco · verso xadrez vermelho", "group": "Cozinha", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b2.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b2-verso.jpg" },
+          { "code": "85003 B3", "name": "Talheres azul · verso xadrez azul", "group": "Cozinha", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b3.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b3-verso.jpg" },
+          { "code": "85003 B4", "name": "Cozinha vintage · verso xadrez bege", "group": "Cozinha", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b4.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b4-verso.jpg" },
+          { "code": "85003 B5", "name": "Azulejos azuis · verso xadrez azul", "group": "Cozinha", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b5.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b5-verso.jpg" },
+          { "code": "85003 B6", "name": "Flores vermelhas · verso xadrez vermelho", "group": "Florais e frutas", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b6.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b6-verso.jpg" },
+          { "code": "85003 B7", "name": "Folhas bege · verso xadrez marrom", "group": "Florais e frutas", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b7.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b7-verso.jpg" },
+          { "code": "85003 B8", "name": "Losangos cinza · verso xadrez preto", "group": "Cozinha", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b8.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b8-verso.jpg" },
+          { "code": "85003 B9", "name": "Frutas laranja · verso xadrez laranja", "group": "Florais e frutas", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b9.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b9-verso.jpg" },
+          { "code": "85003 B10", "name": "Galinhas cinza · verso xadrez preto", "group": "Bichinhos", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b10.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b10-verso.jpg" },
+          { "code": "85003 B11", "name": "Maçãs · verso xadrez vermelho", "group": "Florais e frutas", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b11.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b11-verso.jpg" },
+          { "code": "85003 B12", "name": "Fazendinha · verso xadrez laranja", "group": "Bichinhos", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b12.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b12-verso.jpg" },
+          { "code": "85003 B13", "name": "Galinhas rosa · verso xadrez pink", "group": "Bichinhos", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b13.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b13-verso.jpg" },
+          { "code": "85003 B14", "name": "Galinhas preto · verso xadrez preto", "group": "Bichinhos", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b14.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b14-verso.jpg" },
+          { "code": "85003 B15", "name": "Girassóis e abelhas · verso xadrez verde", "group": "Florais e frutas", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b15.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b15-verso.jpg" },
+          { "code": "85003 B16", "name": "Limões · verso xadrez verde", "group": "Florais e frutas", "image": "produtos/toalhas-de-mesa-dupla-face/85003-b16.jpg", "backImage": "produtos/toalhas-de-mesa-dupla-face/85003-b16-verso.jpg" }
+        ]
+      }
+    ],
+    "faq": [
+      { "q": "Qual a diferença entre a toalha dupla face e a toalha com forro?", "a": "A dupla face é 100% PVC, com estampa impressa nos dois lados, e pode ser usada de qualquer lado. A toalha com forro tem o verso em polipropileno (TNT), que dá mais corpo e aderência à mesa, mas é usada apenas pelo lado estampado." },
+      { "q": "Os dois lados são impermeáveis?", "a": "Sim. Como a toalha é inteiramente de PVC, as duas faces repelem líquidos e são limpas com pano úmido." },
+      { "q": "Como o cliente final usa a dupla face?", "a": "No dia a dia, muitos usam o lado xadrez, que é mais neutro, e viram para a estampa temática em datas especiais, festas e churrascos. É um argumento de venda forte no balcão." },
+      { "q": "A toalha escorrega na mesa?", "a": "Por não ter forro de TNT, a dupla face é mais leve que a toalha com forro. Em mesas de tampo liso, recomenda-se cortar com sobra de 20 a 30 cm por lado para que o peso das abas mantenha a toalha no lugar." },
+      { "q": "Qual a metragem recomendada por mesa?", "a": "Para mesa de 4 lugares, 1,40 a 1,60 m; para 6 lugares, 2,00 m; para 8 lugares, 2,50 m. A largura de 1,40 m atende a maioria das mesas de jantar." }
+    ]
+  },
+  {
+    "slug": "plastico-cristal",
+    "name": "Plástico cristal",
+    "shortName": "Plástico cristal",
+    "title": "Plástico cristal transparente em rolo 1,40 m | Ameritex",
+    "description": "Plástico cristal 100% PVC transparente com papel, largura 1,40 m, em 10 espessuras de 0,07 mm a 1,5 mm. Rolos de 15 a 50 m para proteção de mesas, cortinas e capas.",
+    "h1": "Plástico cristal transparente",
+    "lead": "PVC cristal transparente com papel intercalado, em rolo de 1,40 m de largura e dez espessuras, de 0,07 mm a 1,5 mm. Para proteger toalhas e tampos, confeccionar capas, cortinas, divisórias e bolsas.",
+    "heroImage": "categorias/plastico-cristal-expositor.jpg",
+    "heroAlt": "Expositor Ameritex com rolos de plástico cristal transparente",
+    "cardImage": "produtos/plastico-cristal/plastico-cristal-transparente.jpg",
+    "variantNoun": "espessuras",
+    "highlights": ["Largura 1,40 m · 100% PVC", "10 espessuras: de 0,07 mm a 1,5 mm", "Com papel intercalado para não colar", "Rolos de 15 m a 50 m"],
+    "related": ["toalhas-de-mesa-com-forro", "toalhas-de-mesa-dupla-face", "carpete-para-eventos"],
+    "lines": [
+      {
+        "code": "TMP",
+        "name": "Plástico cristal com papel 1,40 m",
+        "summary": "Filme de PVC cristal, totalmente transparente, enrolado com uma folha de papel entre as voltas para evitar que o plástico grude e marque. A espessura (em milímetros) define o uso: quanto mais fino, mais flexível; quanto mais grosso, mais rígido e resistente.",
+        "material": "PVC",
+        "countryOfOrigin": "China",
+        "specs": [
+          ["Apresentação", "Rolo com papel intercalado"],
+          ["Largura", "1,40 m"],
+          ["Composição", "100% PVC"],
+          ["Acabamento", "Transparente (cristal)"],
+          ["País de origem", "China"],
+          ["Venda", "Por rolo fechado"]
+        ],
+        "table": {
+          "caption": "Espessuras e metragem por rolo",
+          "headers": ["Código", "Espessura", "Rolo (largura × comprimento)", "Uso mais comum"],
+          "rows": [
+            ["TMP07", "0,07 mm", "1,40 m × 50 m", "Proteção leve de toalhas e embalagens"],
+            ["TMP09", "0,09 mm", "1,40 m × 50 m", "Proteção de toalhas e forros finos"],
+            ["TMP10", "0,10 mm", "1,40 m × 50 m", "Toalha cristal de mesa, capas leves"],
+            ["TMP15", "0,15 mm", "1,40 m × 50 m", "Toalha cristal, capas de estofados"],
+            ["TMP20", "0,20 mm", "1,40 m × 50 m", "Toalha cristal reforçada, bolsas e nécessaires"],
+            ["TMP30", "0,30 mm", "1,40 m × 50 m", "Cortinas, capas rígidas, artesanato"],
+            ["TMP40", "0,40 mm", "1,40 m × 30 m", "Cortinas de box, fechamentos leves"],
+            ["TMP50", "0,50 mm", "1,40 m × 30 m", "Fechamento de varandas, divisórias"],
+            ["TMP100", "1,0 mm", "1,40 m × 20 m", "Proteção de tampos de mesa e balcões"],
+            ["TMP150", "1,5 mm", "1,40 m × 15 m", "Tampos de mesa, proteção pesada, cortinas industriais"]
+          ]
+        },
+        "note": "A coluna “uso mais comum” é uma orientação de mercado para ajudar na venda; a escolha final depende da aplicação do cliente.",
+        "images": [
+          { "src": "produtos/plastico-cristal/plastico-cristal-transparente.jpg", "alt": "Mão segurando uma folha de plástico cristal transparente", "caption": "Transparência total: o cristal não altera a cor do que está embaixo." },
+          { "src": "categorias/plastico-cristal-expositor.jpg", "alt": "Rolos de plástico cristal no expositor Ameritex", "caption": "Rolos de 1,40 m de largura, prontos para corte no balcão." }
+        ],
+        "variantLabel": "Espessuras",
+        "variants": [
+          { "code": "TMP07", "name": "0,07 mm · 50 m" },
+          { "code": "TMP09", "name": "0,09 mm · 50 m" },
+          { "code": "TMP10", "name": "0,10 mm · 50 m" },
+          { "code": "TMP15", "name": "0,15 mm · 50 m" },
+          { "code": "TMP20", "name": "0,20 mm · 50 m" },
+          { "code": "TMP30", "name": "0,30 mm · 50 m" },
+          { "code": "TMP40", "name": "0,40 mm · 30 m" },
+          { "code": "TMP50", "name": "0,50 mm · 30 m" },
+          { "code": "TMP100", "name": "1,0 mm · 20 m" },
+          { "code": "TMP150", "name": "1,5 mm · 15 m" }
+        ]
+      }
+    ],
+    "faq": [
+      { "q": "O que significa o número do código (TMP07, TMP20, TMP100)?", "a": "É a espessura em centésimos de milímetro: TMP07 tem 0,07 mm, TMP20 tem 0,20 mm e TMP100 tem 1,0 mm. Quanto maior o número, mais grosso e rígido é o plástico." },
+      { "q": "Para que serve o papel entre as voltas do rolo?", "a": "O PVC cristal tende a aderir a ele mesmo quando enrolado. O papel intercalado evita que as camadas grudem, impede marcas e facilita o desenrolar e o corte no balcão." },
+      { "q": "Qual espessura é indicada para proteger a toalha de mesa?", "a": "Para uso doméstico, entre 0,10 mm e 0,20 mm (TMP10 a TMP20) é o mais vendido: protege a toalha, é flexível e fácil de limpar. Para proteger diretamente o tampo de madeira ou vidro, 1,0 mm a 1,5 mm (TMP100 e TMP150)." },
+      { "q": "O plástico cristal amarela com o tempo?", "a": "Como todo PVC, a exposição prolongada ao sol pode amarelar o material. Em ambientes internos a transparência se mantém por muito tempo. Para áreas externas, oriente o cliente sobre essa característica." },
+      { "q": "Como limpar?", "a": "Pano macio com água e sabão neutro. Evite esponjas abrasivas, álcool e solventes, que riscam ou embaçam a superfície." }
+    ]
+  },
+  {
+    "slug": "carpete-para-eventos",
+    "name": "Carpete para eventos",
+    "shortName": "Carpete para eventos",
+    "title": "Carpete para eventos 2 m x 50 m em 24 cores | Ameritex",
+    "description": "Carpete forração para eventos 100% poliéster, resinado nos dois lados e com tratamento retardante de chamas. Rolo de 2 m x 50 m (100 m²) em 24 cores. Atacado.",
+    "h1": "Carpete para eventos e feiras",
+    "lead": "Forração 100% poliéster, resinada nos dois lados e com tratamento retardante de chamas, em rolo de 2 m de largura por 50 m (100 m²). 24 cores para estandes, palcos, formaturas, casamentos e lojas.",
+    "heroImage": "categorias/carpete-para-eventos-rolos.jpg",
+    "heroAlt": "Rolos de carpete para eventos Ameritex em diversas cores",
+    "cardImage": "produtos/carpete-para-eventos/carpete-a04.jpg",
+    "variantNoun": "cores",
+    "highlights": ["Rolo 2,0 m × 50 m = 100 m²", "100% poliéster · resinado nos 2 lados", "Tratamento retardante de chamas", "24 cores, de neutros a vibrantes"],
+    "related": ["grama-artificial", "plastico-cristal", "passadeiras-de-pvc"],
+    "lines": [
+      {
+        "code": "A01 a A24",
+        "name": "Carpete forração para eventos",
+        "summary": "Carpete agulhado de poliéster com resina aplicada nas duas faces, o que dá estabilidade dimensional, facilita o corte sem desfiar e permite a fixação com fita dupla face. O tratamento retardante de chamas atende à exigência comum de feiras, pavilhões e espaços de eventos.",
+        "material": "Poliéster",
+        "specs": [
+          ["Apresentação", "Rolo com 50 m de comprimento"],
+          ["Largura", "2,0 m"],
+          ["Área por rolo", "100 m² (50 m × 2 m)"],
+          ["Composição", "100% poliéster"],
+          ["Acabamento", "Resinado nos 2 lados"],
+          ["Tratamento", "Retardante de chamas"],
+          ["Venda", "Por rolo fechado"]
+        ],
+        "variantLabel": "Cores",
+        "variants": [
+          { "code": "A01", "name": "Bege", "group": "Neutros", "image": "produtos/carpete-para-eventos/carpete-a01.jpg" },
+          { "code": "A02", "name": "Vermelho", "group": "Quentes", "image": "produtos/carpete-para-eventos/carpete-a02.jpg" },
+          { "code": "A03", "name": "Verde bandeira", "group": "Azuis e verdes", "image": "produtos/carpete-para-eventos/carpete-a03.jpg" },
+          { "code": "A04", "name": "Azul royal", "group": "Azuis e verdes", "image": "produtos/carpete-para-eventos/carpete-a04.jpg" },
+          { "code": "A05", "name": "Cinza escuro", "group": "Neutros", "image": "produtos/carpete-para-eventos/carpete-a05.jpg" },
+          { "code": "A06", "name": "Cinza claro", "group": "Neutros", "image": "produtos/carpete-para-eventos/carpete-a06.jpg" },
+          { "code": "A07", "name": "Preto", "group": "Neutros", "image": "produtos/carpete-para-eventos/carpete-a07.jpg" },
+          { "code": "A08", "name": "Branco", "group": "Neutros", "image": "produtos/carpete-para-eventos/carpete-a08.jpg" },
+          { "code": "A09", "name": "Marsala", "group": "Quentes", "image": "produtos/carpete-para-eventos/carpete-a09.jpg" },
+          { "code": "A10", "name": "Azul marinho", "group": "Azuis e verdes", "image": "produtos/carpete-para-eventos/carpete-a10.jpg" },
+          { "code": "A11", "name": "Verde escuro", "group": "Azuis e verdes", "image": "produtos/carpete-para-eventos/carpete-a11.jpg" },
+          { "code": "A12", "name": "Bege claro", "group": "Neutros", "image": "produtos/carpete-para-eventos/carpete-a12.jpg" },
+          { "code": "A13", "name": "Azul noite", "group": "Azuis e verdes", "image": "produtos/carpete-para-eventos/carpete-a13.jpg" },
+          { "code": "A14", "name": "Rosa pink", "group": "Quentes", "image": "produtos/carpete-para-eventos/carpete-a14.jpg" },
+          { "code": "A15", "name": "Rosa bebê", "group": "Quentes", "image": "produtos/carpete-para-eventos/carpete-a15.jpg" },
+          { "code": "A16", "name": "Lilás", "group": "Quentes", "image": "produtos/carpete-para-eventos/carpete-a16.jpg" },
+          { "code": "A17", "name": "Azul bebê", "group": "Azuis e verdes", "image": "produtos/carpete-para-eventos/carpete-a17.jpg" },
+          { "code": "A18", "name": "Amarelo", "group": "Quentes", "image": "produtos/carpete-para-eventos/carpete-a18.jpg" },
+          { "code": "A19", "name": "Bege camelo", "group": "Neutros", "image": "produtos/carpete-para-eventos/carpete-a19.jpg" },
+          { "code": "A20", "name": "Verde musgo", "group": "Azuis e verdes", "image": "produtos/carpete-para-eventos/carpete-a20.jpg" },
+          { "code": "A21", "name": "Marrom", "group": "Neutros", "image": "produtos/carpete-para-eventos/carpete-a21.jpg" },
+          { "code": "A22", "name": "Roxo", "group": "Quentes", "image": "produtos/carpete-para-eventos/carpete-a22.jpg" },
+          { "code": "A23", "name": "Laranja", "group": "Quentes", "image": "produtos/carpete-para-eventos/carpete-a23.jpg" },
+          { "code": "A24", "name": "Azul turquesa", "group": "Azuis e verdes", "image": "produtos/carpete-para-eventos/carpete-a24.jpg" }
+        ]
+      }
+    ],
+    "faq": [
+      { "q": "O que significa carpete resinado nos dois lados?", "a": "A resina aplicada nas duas faces fixa as fibras do poliéster: o carpete não desfia no corte, não solta fiapos, fica mais estável no piso e aceita fita dupla face sem danificar a manta." },
+      { "q": "O carpete tem laudo de retardante de chamas?", "a": "O produto recebe tratamento retardante de chamas na fabricação. Se o seu evento exigir laudo específico (corpo de bombeiros, pavilhão de feiras), solicite a documentação disponível ao nosso time comercial antes do pedido." },
+      { "q": "Quantos metros quadrados tem um rolo?", "a": "Cada rolo tem 50 m de comprimento por 2 m de largura, ou seja, 100 m². Para calcular a quantidade, meça a área do espaço e acrescente de 5% a 10% para recortes e emendas." },
+      { "q": "O carpete pode ser reutilizado?", "a": "Em eventos, a forração costuma ser descartada ou reaproveitada uma ou duas vezes, dependendo do cuidado na retirada. A resina nos dois lados ajuda a preservar a manta para reuso." },
+      { "q": "Como fixar o carpete no piso?", "a": "Em pisos lisos, use fita dupla face própria para carpete nas bordas e emendas. Em grandes áreas, aplique também faixas no centro para evitar ondulação. Retire a fita logo após o evento para não deixar resíduo." }
+    ]
+  },
+  {
+    "slug": "forro-para-gavetas-e-armarios",
+    "name": "Forro para gavetas e armários",
+    "shortName": "Forro para gavetas",
+    "title": "Forro antiderrapante para gavetas e armários | Ameritex",
+    "description": "Forro antiderrapante de PVC para gavetas, armários e prateleiras: rolos de 20 m (30, 40, 60 e 140 cm) e rolinhos de 4 m em caixa com 12. Quatro cores. Atacado.",
+    "h1": "Forro para gavetas e armários",
+    "lead": "Manta de PVC vazado antiderrapante para forrar gavetas, armários, prateleiras, cristaleiras e bancadas. Rolos de 20 m para corte no balcão e rolinhos de 4 m prontos para a gôndola.",
+    "heroImage": "categorias/forro-para-gavetas-rolo.jpg",
+    "heroAlt": "Rolo de forro antiderrapante de PVC marrom para gavetas e armários",
+    "cardImage": "produtos/forro-para-gavetas-e-armarios/forro-rolinhos-4m.jpg",
+    "variantNoun": "medidas e cores",
+    "highlights": ["100% PVC · 400 g/m²", "Rolos de 20 m: 30, 40, 60 e 140 cm", "Rolinhos de 4 m: caixa com 12 unidades", "4 cores: off-white, cinza, marrom e preto"],
+    "related": ["passadeiras-de-pvc", "papel-de-parede-de-pvc", "placa-adesiva-de-pvc"],
+    "lines": [
+      {
+        "code": "85008 85009 85010 85018",
+        "name": "Forro em rolo de 20 m",
+        "summary": "Rolos longos para o lojista cortar na medida. Quatro larguras cobrem desde gavetas estreitas até prateleiras e fundos de armário inteiros (140 cm).",
+        "material": "PVC",
+        "specs": [
+          ["Apresentação", "Rolo com 20 m de comprimento"],
+          ["Larguras", "30 cm, 40 cm, 60 cm e 140 cm"],
+          ["Composição", "100% PVC"],
+          ["Gramatura", "400 g/m²"],
+          ["Acabamento", "Manta vazada antiderrapante"],
+          ["Venda", "Por rolo fechado"]
+        ],
+        "table": {
+          "caption": "Códigos por largura (rolo de 20 m)",
+          "headers": ["Código", "Largura", "Comprimento", "Indicação"],
+          "rows": [
+            ["85008", "30 cm", "20 m", "Gavetas de cozinha e cômodas"],
+            ["85009", "40 cm", "20 m", "Gavetas largas e prateleiras estreitas"],
+            ["85010", "60 cm", "20 m", "Prateleiras, armários e bancadas"],
+            ["85018", "140 cm", "20 m", "Fundos de armário, tapete de bancada, forração de balcões"]
+          ]
+        },
+        "images": [
+          { "src": "produtos/forro-para-gavetas-e-armarios/forro-rolos-20m.jpg", "alt": "Rolos de 20 m de forro para gavetas e armários Ameritex nas cores preto, off-white, marrom e cinza", "caption": "Rolos de 20 m com etiqueta de identificação Ameritex." }
+        ],
+        "variantLabel": "Cores",
+        "variants": [
+          { "code": "A1", "name": "Off-white", "color": "#f1eee3" },
+          { "code": "A2", "name": "Cinza", "color": "#8d8d8d" },
+          { "code": "A3", "name": "Marrom", "color": "#6b5243" },
+          { "code": "A4", "name": "Preto", "color": "#2b2b2b" }
+        ]
+      },
+      {
+        "code": "85011 85012 85013",
+        "name": "Forro em rolinho de 4 m",
+        "summary": "Formato de autosserviço: rolinho de 4 m embalado individualmente, com etiqueta, em caixa com 12 unidades. Ideal para gôndola de utilidades domésticas, supermercado e loja de organização.",
+        "material": "PVC",
+        "specs": [
+          ["Apresentação", "Rolinho com 4 m, embalado individualmente"],
+          ["Larguras", "30 cm, 40 cm e 60 cm"],
+          ["Composição", "100% PVC"],
+          ["Gramatura", "400 g/m²"],
+          ["Embalagem", "Caixa com 12 unidades"],
+          ["Venda", "Por caixa fechada"]
+        ],
+        "table": {
+          "caption": "Códigos por largura (rolinho de 4 m, caixa com 12)",
+          "headers": ["Código", "Largura", "Comprimento", "Indicação"],
+          "rows": [
+            ["85011", "30 cm", "4 m", "Gavetas de cozinha e cômodas"],
+            ["85012", "40 cm", "4 m", "Gavetas largas e prateleiras"],
+            ["85013", "60 cm", "4 m", "Prateleiras e armários"]
+          ]
+        },
+        "images": [
+          { "src": "produtos/forro-para-gavetas-e-armarios/forro-rolinhos-4m.jpg", "alt": "Rolinhos de 4 m de forro para gavetas Ameritex com etiqueta, nas cores preto, marrom, off-white e cinza", "caption": "Rolinhos de 4 m prontos para a gôndola." }
+        ],
+        "variantLabel": "Cores",
+        "variants": [
+          { "code": "A1", "name": "Off-white", "color": "#f1eee3" },
+          { "code": "A2", "name": "Cinza", "color": "#8d8d8d" },
+          { "code": "A3", "name": "Marrom", "color": "#6b5243" },
+          { "code": "A4", "name": "Preto", "color": "#2b2b2b" }
+        ]
+      }
+    ],
+    "faq": [
+      { "q": "Para que serve o forro antiderrapante?", "a": "Para proteger o fundo de gavetas, armários e prateleiras contra riscos e umidade, evitar que louças, talheres e objetos deslizem e facilitar a limpeza. Também é usado como base antiderrapante sob tapetes, bandejas e tábuas de corte." },
+      { "q": "O forro precisa de cola?", "a": "Não. A manta de PVC vazado tem aderência própria e fica no lugar apenas apoiada. Basta cortar na medida com tesoura e encaixar." },
+      { "q": "Qual a diferença entre o rolo de 20 m e o rolinho de 4 m?", "a": "O produto é o mesmo. O rolo de 20 m é para lojas que vendem por metro e cortam no balcão. O rolinho de 4 m é um item de autosserviço, embalado com etiqueta, vendido por caixa com 12 unidades." },
+      { "q": "Pode lavar o forro?", "a": "Sim. Lave com água e sabão neutro e deixe secar à sombra. O PVC não absorve água nem retém odores." },
+      { "q": "O forro de 140 cm é usado para quê?", "a": "Para forrar fundos de armários e balcões inteiros, cobrir bancadas de trabalho, servir de base antiderrapante para tapetes e até para proteger o porta-malas e prateleiras comerciais." }
+    ]
+  },
+  {
+    "slug": "grama-artificial",
+    "name": "Grama artificial",
+    "shortName": "Grama artificial",
+    "title": "Grama artificial 2 m x 25 m – 10 mm e 20 mm | Ameritex",
+    "description": "Grama sintética em rolo de 2 m x 25 m: comum 10 mm (85014) e realista 20 mm (85015). Para decoração, eventos, varandas, playgrounds e vitrines. Atacado.",
+    "h1": "Grama artificial em rolo",
+    "lead": "Grama sintética em rolo de 2 metros de largura por 25 metros, em duas alturas: comum de 10 mm, para forração econômica, e realista de 20 mm, para decoração com aparência natural.",
+    "heroImage": "produtos/grama-artificial/85015-realista.jpg",
+    "heroAlt": "Grama artificial realista Ameritex com 20 mm de altura",
+    "cardImage": "produtos/grama-artificial/85015-realista.jpg",
+    "variantNoun": "versões",
+    "highlights": ["Rolo 2,0 m × 25 m = 50 m²", "Comum 10 mm (85014) e realista 20 mm (85015)", "Decoração, eventos, varandas e vitrines", "Venda por rolo fechado"],
+    "related": ["carpete-para-eventos", "passadeiras-de-pvc", "placa-adesiva-de-pvc"],
+    "lines": [
+      {
+        "code": "85014 85015",
+        "name": "Grama artificial 2 m × 25 m",
+        "summary": "Duas opções para públicos diferentes: a grama comum, de 10 mm, atende quem precisa de forração verde com custo baixo (eventos, estandes, pet shops, vitrines); a grama realista, de 20 mm, tem fios mais altos e mistura de tons para varandas, áreas de lazer, playgrounds e decoração permanente.",
+        "specs": [
+          ["Apresentação", "Rolo com 25 m de comprimento"],
+          ["Largura", "2,0 m"],
+          ["Área por rolo", "50 m² (25 m × 2 m)"],
+          ["Alturas", "10 mm (comum) e 20 mm (realista)"],
+          ["Venda", "Por rolo fechado"]
+        ],
+        "variantLabel": "Versões",
+        "variants": [
+          { "code": "85015", "name": "Realista · 20 mm de altura", "image": "produtos/grama-artificial/85015-realista.jpg" },
+          { "code": "85014", "name": "Comum · 10 mm de altura", "image": "produtos/grama-artificial/85014-comum.jpg" }
+        ]
+      }
+    ],
+    "faq": [
+      { "q": "Qual a diferença entre a grama comum e a realista?", "a": "A comum (85014) tem fios de 10 mm, uniformes, e é indicada para forração temporária e decoração de baixo custo. A realista (85015) tem fios de 20 mm e mistura de tons, com aparência mais próxima da grama natural, para uso decorativo permanente." },
+      { "q": "A grama artificial pode ficar ao ar livre?", "a": "Sim, é um produto pensado para áreas externas como varandas, quintais e áreas de lazer. Como em qualquer material sintético, a exposição intensa ao sol ao longo dos anos pode alterar o tom." },
+      { "q": "Como instalar?", "a": "Sobre piso liso e limpo, a grama pode ser apenas assentada ou fixada com fita dupla face nas bordas. Em áreas externas sobre terra ou brita, usa-se base nivelada e fixação com pregos ou cola apropriada. Para emendas, há fitas específicas." },
+      { "q": "Quantos metros quadrados tem o rolo?", "a": "50 m² (2 m de largura por 25 m de comprimento). Calcule a área do espaço e acrescente de 5% a 10% para recortes." },
+      { "q": "É fácil de limpar?", "a": "Sim. Folhas e sujeira seca saem com vassoura ou soprador; líquidos e pelos de animais, com água corrente. Evite produtos químicos agressivos." }
+    ]
+  },
+  {
+    "slug": "papel-de-parede-de-pvc",
+    "name": "Papel de parede de PVC",
+    "shortName": "Papel de parede",
+    "title": "Papel de parede de PVC madeira e mármore | Ameritex",
+    "description": "Papel de parede adesivo de PVC em rolo de 45 cm x 10 m, caixa com 15 rolos. 19 padrões: ripados e madeiras (wood), mármores, pastilhas e tijolinhos (marble).",
+    "h1": "Papel de parede de PVC",
+    "lead": "Revestimento adesivo de PVC em rolo de 45 cm por 10 m, vendido em caixa com 15 rolos. 19 padrões divididos em duas coleções: Wood (ripados e madeiras) e Marble (mármores, pastilhas e tijolinhos).",
+    "heroImage": "categorias/papel-de-parede-rolos.jpg",
+    "heroAlt": "Rolos de papel de parede de PVC Ameritex com padrões de mármore, granito e madeira",
+    "cardImage": "produtos/papel-de-parede-de-pvc/85016-a2.jpg",
+    "variantNoun": "padrões",
+    "highlights": ["Rolo 45 cm × 10 m (4,5 m²)", "Caixa com 15 rolos", "Coleção Wood: 10 padrões", "Coleção Marble: 9 padrões"],
+    "related": ["placa-adesiva-de-pvc", "forro-para-gavetas-e-armarios", "plastico-cristal"],
+    "lines": [
+      {
+        "code": "85016",
+        "name": "Papel de parede de PVC 45 cm × 10 m",
+        "summary": "Filme de PVC decorativo com verso adesivo, que se aplica direto sobre a superfície limpa e lisa: paredes, portas, móveis, bancadas e nichos. Cada rolo cobre 4,5 m². Os padrões Wood imitam ripados e madeiras; os Marble, mármores, granito, pastilhas e tijolinhos.",
+        "material": "PVC",
+        "specs": [
+          ["Apresentação", "Rolo com 10 m de comprimento"],
+          ["Largura", "45 cm"],
+          ["Área por rolo", "4,5 m²"],
+          ["Embalagem", "Caixa com 15 rolos"],
+          ["Material", "PVC adesivo"],
+          ["Venda", "Por caixa fechada"]
+        ],
+        "variantLabel": "Padrões",
+        "variants": [
+          { "code": "85016 A1", "name": "Ripado claro", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a1.jpg" },
+          { "code": "85016 A2", "name": "Ripado carvalho", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a2.jpg" },
+          { "code": "85016 A3", "name": "Ripado cinza", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a3.jpg" },
+          { "code": "85016 A4", "name": "Ripado cerejeira", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a4.jpg" },
+          { "code": "85016 A5", "name": "Ripado mel", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a5.jpg" },
+          { "code": "85016 A6", "name": "Carvalho claro", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a6.jpg" },
+          { "code": "85016 A7", "name": "Carvalho dourado", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a7.jpg" },
+          { "code": "85016 A8", "name": "Nogueira", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a8.jpg" },
+          { "code": "85016 A9", "name": "Mogno", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a9.jpg" },
+          { "code": "85016 A10", "name": "Freijó", "group": "Wood (madeira)", "image": "produtos/papel-de-parede-de-pvc/85016-a10.jpg" },
+          { "code": "85016 B1", "name": "Mármore cinza", "group": "Marble (mármore e pedras)", "image": "produtos/papel-de-parede-de-pvc/85016-b1.jpg" },
+          { "code": "85016 B2", "name": "Granito claro", "group": "Marble (mármore e pedras)", "image": "produtos/papel-de-parede-de-pvc/85016-b2.jpg" },
+          { "code": "85016 B3", "name": "Mármore carrara", "group": "Marble (mármore e pedras)", "image": "produtos/papel-de-parede-de-pvc/85016-b3.jpg" },
+          { "code": "85016 B4", "name": "Mármore bege", "group": "Marble (mármore e pedras)", "image": "produtos/papel-de-parede-de-pvc/85016-b4.jpg" },
+          { "code": "85016 B5", "name": "Pastilha verde", "group": "Marble (mármore e pedras)", "image": "produtos/papel-de-parede-de-pvc/85016-b5.jpg" },
+          { "code": "85016 B6", "name": "Pastilha cinza", "group": "Marble (mármore e pedras)", "image": "produtos/papel-de-parede-de-pvc/85016-b6.jpg" },
+          { "code": "85016 B7", "name": "Pastilha azul", "group": "Marble (mármore e pedras)", "image": "produtos/papel-de-parede-de-pvc/85016-b7.jpg" },
+          { "code": "85016 B8", "name": "Tijolinho branco", "group": "Marble (mármore e pedras)", "image": "produtos/papel-de-parede-de-pvc/85016-b8.jpg" },
+          { "code": "85016 B9", "name": "Tijolinho rústico", "group": "Marble (mármore e pedras)", "image": "produtos/papel-de-parede-de-pvc/85016-b9.jpg" }
+        ]
+      }
+    ],
+    "faq": [
+      { "q": "Quantos metros quadrados cobre um rolo?", "a": "Cada rolo tem 45 cm de largura por 10 m de comprimento, o que equivale a 4,5 m². Uma caixa com 15 rolos cobre 67,5 m², descontando as perdas de recorte." },
+      { "q": "Em quais superfícies o papel de parede de PVC pode ser aplicado?", "a": "Em superfícies lisas, limpas e secas: paredes pintadas com tinta lavável, portas, móveis de MDF, vidro, azulejo e bancadas. Em paredes com textura ou reboco irregular, a aderência fica comprometida." },
+      { "q": "Pode usar em áreas úmidas, como cozinha e banheiro?", "a": "Sim, o PVC é impermeável e lavável. Evite apenas o contato direto com calor intenso (atrás de fogão, por exemplo) e cuide para que as emendas fiquem bem aderidas." },
+      { "q": "Como aplicar sem bolhas?", "a": "Limpe e seque a superfície, meça e corte com sobra, descole a película aos poucos e vá alisando com uma espátula plástica do centro para as bordas. Pequenas bolhas podem ser furadas com alfinete e alisadas." },
+      { "q": "Dá para remover depois?", "a": "Sim. O adesivo é removível; aqueça levemente com secador de cabelo e puxe devagar. Em paredes com tinta frágil, pode haver desprendimento de tinta, por isso teste em uma área pequena." }
+    ]
+  },
+  {
+    "slug": "placa-adesiva-de-pvc",
+    "name": "Placa adesiva de PVC",
+    "shortName": "Placa adesiva",
+    "title": "Placa adesiva de PVC ripado e mármore 30x60 cm | Ameritex",
+    "description": "Placa adesiva de PVC 30 x 60 cm: ripado (wood), subway tile e mármores (marble). Caixa com 16 pacotes de 10 unidades. Revestimento de parede sem obra. Atacado.",
+    "h1": "Placas adesivas de PVC para parede",
+    "lead": "Revestimento em placas de 30 cm × 60 cm com adesivo no verso, para renovar paredes sem obra. 13 padrões: ripados de madeira, subway tile branco e preto e mármores. Caixa com 16 pacotes de 10 unidades.",
+    "heroImage": "categorias/placa-adesiva-ambiente.jpg",
+    "heroAlt": "Parede revestida com placas adesivas de PVC ripado em tom de madeira",
+    "cardImage": "produtos/placa-adesiva-de-pvc/85017-a1.jpg",
+    "variantNoun": "padrões",
+    "highlights": ["Placa 30 cm × 60 cm (0,18 m²)", "Caixa com 16 pacotes de 10 unidades (160 placas)", "Coleção Wood: 6 ripados", "Coleção Marble: 7 padrões, com subway tile"],
+    "related": ["papel-de-parede-de-pvc", "forro-para-gavetas-e-armarios", "grama-artificial"],
+    "lines": [
+      {
+        "code": "85017",
+        "name": "Placa adesiva de PVC 30 × 60 cm",
+        "summary": "Placas rígidas e leves de PVC com impressão de alta definição e verso autoadesivo. Aplicadas lado a lado, formam painéis ripados, paredes de subway tile ou superfícies de mármore sem quebra-quebra, massa ou rejunte. Cada pacote tem 10 placas (1,8 m²).",
+        "material": "PVC",
+        "specs": [
+          ["Dimensões", "30 cm de largura × 60 cm de altura"],
+          ["Área por placa", "0,18 m²"],
+          ["Pacote", "10 unidades (1,8 m²)"],
+          ["Caixa", "16 pacotes de 10 unidades (160 placas · 28,8 m²)"],
+          ["Material", "PVC adesivo"],
+          ["Venda", "Por caixa fechada"]
+        ],
+        "variantLabel": "Padrões",
+        "variants": [
+          { "code": "85017 A1", "name": "Ripado carvalho", "group": "Wood (ripados)", "image": "produtos/placa-adesiva-de-pvc/85017-a1.jpg" },
+          { "code": "85017 A2", "name": "Ripado cinza", "group": "Wood (ripados)", "image": "produtos/placa-adesiva-de-pvc/85017-a2.jpg" },
+          { "code": "85017 A3", "name": "Ripado rústico", "group": "Wood (ripados)", "image": "produtos/placa-adesiva-de-pvc/85017-a3.jpg" },
+          { "code": "85017 A4", "name": "Ripado envelhecido", "group": "Wood (ripados)", "image": "produtos/placa-adesiva-de-pvc/85017-a4.jpg" },
+          { "code": "85017 A5", "name": "Ripado bege", "group": "Wood (ripados)", "image": "produtos/placa-adesiva-de-pvc/85017-a5.jpg" },
+          { "code": "85017 A6", "name": "Ripado cinza claro", "group": "Wood (ripados)", "image": "produtos/placa-adesiva-de-pvc/85017-a6.jpg" },
+          { "code": "85017 B1", "name": "Subway tile branco", "group": "Marble (mármore e tijolinho)", "image": "produtos/placa-adesiva-de-pvc/85017-b1.jpg" },
+          { "code": "85017 B2", "name": "Subway tile preto", "group": "Marble (mármore e tijolinho)", "image": "produtos/placa-adesiva-de-pvc/85017-b2.jpg" },
+          { "code": "85017 B3", "name": "Mármore branco", "group": "Marble (mármore e tijolinho)", "image": "produtos/placa-adesiva-de-pvc/85017-b3.jpg" },
+          { "code": "85017 B4", "name": "Mármore calacatta", "group": "Marble (mármore e tijolinho)", "image": "produtos/placa-adesiva-de-pvc/85017-b4.jpg" },
+          { "code": "85017 B5", "name": "Mármore bege", "group": "Marble (mármore e tijolinho)", "image": "produtos/placa-adesiva-de-pvc/85017-b5.jpg" },
+          { "code": "85017 B6", "name": "Mármore creme", "group": "Marble (mármore e tijolinho)", "image": "produtos/placa-adesiva-de-pvc/85017-b6.jpg" },
+          { "code": "85017 B7", "name": "Mármore preto e laranja", "group": "Marble (mármore e tijolinho)", "image": "produtos/placa-adesiva-de-pvc/85017-b7.jpg" }
+        ]
+      }
+    ],
+    "faq": [
+      { "q": "Quantas placas preciso para uma parede?", "a": "Cada placa cobre 0,18 m² (30 × 60 cm). Para uma parede de 3 m × 2,6 m (7,8 m²), são necessárias cerca de 44 placas, ou 5 pacotes de 10, já considerando 10% de recortes." },
+      { "q": "A placa adesiva substitui o painel ripado de madeira?", "a": "Para fins decorativos, sim. O resultado visual é muito próximo, com custo e tempo de instalação muito menores: não precisa de marceneiro, parafusos nem acabamento." },
+      { "q": "Em qual superfície pode aplicar?", "a": "Paredes lisas, pintadas e secas, MDF, vidro, azulejo e gesso acartonado. Superfícies ásperas, com umidade ou tinta descascando precisam ser tratadas antes." },
+      { "q": "Como cortar as placas?", "a": "Com estilete e régua, marcando e quebrando, ou com tesoura reforçada. Para recortes de tomadas e interruptores, faça o molde em papel antes." },
+      { "q": "Pode usar no banheiro?", "a": "Sim, fora da área de chuveiro direto. O PVC resiste à umidade; apenas garanta que as emendas fiquem bem pressionadas para não entrar água por trás." }
+    ]
+  }
+]

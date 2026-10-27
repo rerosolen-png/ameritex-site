@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Mantém as GitHub Actions atualizadas (único "dependente" do projeto)
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "ci"
+    labels:
+      - dependencies

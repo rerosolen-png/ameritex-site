@@ -1,0 +1,86 @@
+{
+  "brand": "Ameritex",
+  "legalName": "Ameritex Comércio, Importação e Exportação Ltda.",
+  "cnpj": "60.036.860/0001-07",
+  "foundedYear": 1989,
+  "siteUrl": "https://ameritex.com.br",
+  "locale": "pt-BR",
+  "tagline": "Importadora de tecidos e plásticos",
+  "description": "Ameritex: importadora de tecidos e plásticos desde 1989. Passadeiras de PVC, toalhas de mesa plásticas, plástico cristal, carpete para eventos, forro para gavetas, grama artificial, papel de parede e placas adesivas de PVC no atacado para todo o Brasil.",
+  "email": "contato@ameritex.com.br",
+  "phone": {
+    "display": "(19) 3405-6031",
+    "e164": "+551934056031"
+  },
+  "whatsapp": {
+    "display": "(19) 99802-6031",
+    "e164": "+5519998026031",
+    "digits": "5519998026031",
+    "defaultMessage": "Olá! Vim pelo site da Ameritex e gostaria de mais informações sobre os produtos."
+  },
+  "addresses": [
+    {
+      "id": "matriz",
+      "label": "Matriz e centro de distribuição",
+      "street": "Rua Luiz Ferrari, 428",
+      "district": "Centro",
+      "city": "Albertina",
+      "state": "MG",
+      "postalCode": "37596-000",
+      "show": true,
+      "primary": true
+    },
+    {
+      "id": "showroom",
+      "label": "Showroom",
+      "street": "Rua Luís Suzigan, 324",
+      "district": "Cidade Industrial",
+      "city": "Santa Bárbara d'Oeste",
+      "state": "SP",
+      "postalCode": "13456-164",
+      "show": true,
+      "primary": false
+    },
+    {
+      "id": "filial-ribeirao",
+      "label": "Filial",
+      "street": "Avenida da Saudade, 882",
+      "district": "",
+      "city": "Ribeirão Preto",
+      "state": "SP",
+      "postalCode": "",
+      "show": false,
+      "primary": false,
+      "_nota": "Consta no cadastro do CNPJ (filial 0002-98). Mude show para true após confirmar o endereço completo."
+    }
+  ],
+  "openingHours": "",
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "linkedin": ""
+  },
+  "logo": {
+    "light": "brand/ameritex-logo-branco.png",
+    "dark": "brand/ameritex-logo-navy.png",
+    "mark": "brand/ameritex-simbolo-branco.png"
+  },
+  "ogImage": "brand/og-default.jpg",
+  "catalogFile": "/downloads/catalogo-ameritex-2026.pdf",
+  "catalogYear": 2026,
+  "nav": [
+    { "label": "Início", "href": "/" },
+    { "label": "Produtos", "href": "/produtos/", "children": "produtos" },
+    { "label": "Guias", "href": "/guias/" },
+    { "label": "Sobre", "href": "/sobre/" },
+    { "label": "Contato", "href": "/contato/" }
+  ],
+  "audiences": [
+    "lojas de tecidos e armarinhos",
+    "lojas de utilidades domésticas e decoração",
+    "atacadistas e distribuidores regionais",
+    "fabricantes de artigos para casa",
+    "empresas de eventos, feiras e cenografia",
+    "marceneiros, arquitetos e decoradores"
+  ]
+}
