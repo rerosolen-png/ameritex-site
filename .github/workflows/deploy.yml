@@ -32,7 +32,7 @@ jobs:
       # Descobre a URL pública (usuario.github.io/repo ou o domínio próprio configurado em Settings > Pages)
       - name: Configurar GitHub Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Build do site
         run: node scripts/build.mjs
