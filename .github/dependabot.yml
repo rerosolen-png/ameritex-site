@@ -1,10 +1,15 @@
 version: 2
 updates:
-  # Mantém as GitHub Actions atualizadas (único "dependente" do projeto)
+  # Mantém as GitHub Actions atualizadas (único "dependente" do projeto).
+  # As atualizações são agrupadas em um único PR por mês para reduzir ruído.
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
+    groups:
+      github-actions:
+        patterns:
+          - "*"
     commit-message:
       prefix: "ci"
     labels:
