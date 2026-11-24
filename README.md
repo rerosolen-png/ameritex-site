@@ -3,7 +3,8 @@
 Site institucional e catálogo online da **Ameritex Comércio, Importação e Exportação Ltda.**, importadora de tecidos e plásticos fundada em 1989. Substitui o site anterior em WordPress por um site estático, rápido e otimizado para buscadores, com todo o conteúdo do **Catálogo 2026**.
 
 [![CI](https://github.com/rerosolen-png/ameritex-site/actions/workflows/ci.yml/badge.svg)](https://github.com/rerosolen-png/ameritex-site/actions/workflows/ci.yml)
-[![Deploy](https://github.com/rerosolen-png/ameritex-site/actions/workflows/deploy.yml/badge.svg)](https://github.com/rerosolen-png/ameritex-site/actions/workflows/deploy.yml)
+[![Produção](https://github.com/rerosolen-png/ameritex-site/actions/workflows/deploy-hostgator.yml/badge.svg)](https://github.com/rerosolen-png/ameritex-site/actions/workflows/deploy-hostgator.yml)
+[![Prévia](https://github.com/rerosolen-png/ameritex-site/actions/workflows/deploy.yml/badge.svg)](https://github.com/rerosolen-png/ameritex-site/actions/workflows/deploy.yml)
 
 ## Visão geral
 
@@ -12,7 +13,7 @@ Site institucional e catálogo online da **Ameritex Comércio, Importação e Ex
 | **Páginas** | Início · Produtos (9 linhas, 140 variantes) · Guias (5 artigos) · Sobre · Contato · Catálogo PDF · Política de privacidade · 404 |
 | **Stack** | HTML + CSS + JavaScript puros, gerados por um build em Node.js **sem dependências externas** (`scripts/build.mjs`) |
 | **Conteúdo** | JSON (`src/data/`) e Markdown (`src/content/`) – editável sem conhecimento de programação |
-| **Hospedagem** | GitHub Pages com domínio próprio, deploy automático via GitHub Actions a cada push em `main`. Até o DNS ser trocado, a prévia fica em `rerosolen-png.github.io/ameritex-site/` (o build detecta o caminho base automaticamente) |
+| **Hospedagem** | Produção em `ameritex.com.br` (HostGator), enviada por FTPS a cada merge em `main`. Prévia em `rerosolen-png.github.io/ameritex-site/` (GitHub Pages), marcada como `noindex` |
 | **Qualidade** | `scripts/check.mjs` valida SEO, links, imagens e dados estruturados em todo build (bloqueia o deploy se houver erro) |
 
 ### Por que um site estático sem framework
@@ -44,7 +45,7 @@ Site institucional e catálogo online da **Ameritex Comércio, Importação e Ex
 │   │   ├── produtos.json # Linhas, especificações e variantes (códigos, nomes, imagens)
 │   │   ├── faq.json      # Perguntas frequentes da página inicial
 │   │   └── redirects.json# URLs do site antigo → novas
-│   ├── lib/              # Utilitários: html seguro, markdown, imagens, carregamento de conteúdo
+│   ├── lib/              # Utilitários: html seguro, markdown, imagens, conteúdo, .htaccess
 │   ├── scripts/main.js   # JavaScript do site
 │   ├── styles/main.css   # Folha de estilo (tokens de marca em :root)
 │   └── templates/        # Templates de página (layout, componentes, páginas)
@@ -70,7 +71,7 @@ winget install OpenJS.NodeJS.LTS Git.Git GitHub.cli
 | Comando | O que faz |
 |---------|-----------|
 | `npm run build` | Gera o site em `dist/`. A variável `SITE_URL` sobrescreve a URL pública (o deploy usa isso para publicar em `usuario.github.io/repo` antes do domínio próprio) |
-| `npm run check` | Valida `dist/` (títulos, descrições, canonical, Open Graph, `alt`, links internos, sitemap, JSON-LD) |
+| `npm run check` | Valida `dist/` (títulos, descrições, canonical, Open Graph, `alt`, links internos, sitemap, JSON-LD, destinos do `.htaccess`) |
 | `npm test` | `build` + `check` – é o que o CI executa |
 | `npm run dev` | Build + servidor em http://localhost:8080 com rebuild automático ao salvar |
 | `npm run serve` | Apenas serve o `dist/` existente |
@@ -92,7 +93,12 @@ Toda alteração é validada por `npm test`. Se algo estiver inconsistente (imag
 
 ## Deploy
 
-O site é publicado automaticamente no **GitHub Pages** a cada push em `main` (workflow [`deploy.yml`](.github/workflows/deploy.yml)). Passo a passo da configuração inicial, do domínio `ameritex.com.br` (DNS) e das alternativas de hospedagem em [`docs/DEPLOY.md`](docs/DEPLOY.md).
+Cada merge em `main` publica em dois lugares:
+
+- **Produção** – `ameritex.com.br`, na HostGator, por FTPS (workflow [`deploy-hostgator.yml`](.github/workflows/deploy-hostgator.yml)). As credenciais ficam em GitHub Secrets e o deploy só roda com a variável `HOSTGATOR_DEPLOY=true`.
+- **Prévia** – GitHub Pages (workflow [`deploy.yml`](.github/workflows/deploy.yml)), sem indexação nos buscadores.
+
+Configuração inicial, backup do site antigo, `.htaccess`, como voltar atrás e alternativas de hospedagem em [`docs/DEPLOY.md`](docs/DEPLOY.md).
 
 ## SEO
 

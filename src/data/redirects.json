@@ -1,5 +1,5 @@
 {
-  "_comentario": "URLs do site antigo (WordPress/WooCommerce) → URLs novas. O build gera uma página de redirecionamento para cada entrada e também o arquivo _redirects (Netlify/Cloudflare Pages).",
+  "_comentario": "URLs do site antigo (WordPress/WooCommerce) → URLs novas. Para cada entrada o build gera uma página de redirecionamento e as regras 301 de servidor em .htaccess (Apache/HostGator) e _redirects (Netlify/Cloudflare Pages). Em \"_prefixos\", qualquer URL que comece com o trecho é redirecionada (só com redirecionamento de servidor).",
   "/sobre-nos/": "/sobre/",
   "/categoria-produto/toalhasplast/": "/produtos/toalhas-de-mesa-com-forro/",
   "/categoria-produto/passadeiras/": "/produtos/passadeiras-de-pvc/",
@@ -12,5 +12,14 @@
   "/produto/passadeira-pvc/": "/produtos/passadeiras-de-pvc/",
   "/produto/passadeira-pvc-copia/": "/produtos/passadeiras-de-pvc/",
   "/produto/tecido-para-roupas/": "/produtos/",
-  "/produto/tecido-para-roupas-copia/": "/produtos/"
+  "/produto/tecido-para-roupas-copia/": "/produtos/",
+  "/loja/": "/produtos/",
+  "/carrinho/": "/contato/",
+  "/finalizar-compra/": "/contato/",
+  "/minha-conta/": "/contato/",
+  "_prefixos": {
+    "/produto/": "/produtos/",
+    "/categoria-produto/": "/produtos/",
+    "/produto-tag/": "/produtos/"
+  }
 }

@@ -25,7 +25,8 @@ O site antigo tinha nove produtos genéricos ("Toalha Mesa Impermeavel", "Tecido
 | Imagens com `alt` descritivo (código + nome da estampa), `width`/`height` (sem CLS) e `loading="lazy"` (exceto a primeira dobra, com `fetchpriority="high"`) | `components.mjs` |
 | Links internos entre produtos relacionados, guias ↔ produtos, menu e rodapé completos | templates e `related` |
 | Página 404 com `noindex` e atalhos | `institucional.mjs` |
-| Redirecionamentos das URLs antigas | `redirects.json` → páginas `meta refresh` com canonical para o destino + `_redirects` |
+| Redirecionamentos das URLs antigas | `redirects.json` → **301 de servidor** no `.htaccess` (produção na HostGator) e em `_redirects`; páginas `meta refresh` com canonical como reserva |
+| Prévia fora dos buscadores | Build com `SITE_URL` diferente da produção recebe `noindex,nofollow` (`layout.mjs`) |
 | Performance: CSS único com hash, ~4 KB de JS, fontes com `preconnect` e `display=swap`, sem bibliotecas | `main.css`, `main.js`, `layout.mjs` |
 | Mobile first, menu acessível (`aria-expanded`), foco visível, skip link | `main.css`, `main.js` |
 | Validação automática de tudo isso em cada build | `scripts/check.mjs` |
@@ -50,7 +51,7 @@ O site antigo tinha nove produtos genéricos ("Toalha Mesa Impermeavel", "Tecido
 1. **Google Search Console:** adicionar a propriedade `ameritex.com.br` (verificação por DNS), enviar `https://ameritex.com.br/sitemap.xml`, pedir indexação das páginas principais e acompanhar "Páginas" e "Melhorias" por algumas semanas.
 2. **Bing Webmaster Tools:** importar do Search Console.
 3. **Google Business Profile:** criar/atualizar o perfil da empresa com o mesmo nome, endereço e telefone do site (NAP consistente), categoria "Importador" / "Atacadista de tecidos", fotos e link para o site. Depois, preencher `social` em `site.json` com os perfis e o build inclui em `sameAs`.
-4. **Redirecionamentos:** testar as URLs antigas listadas em `src/data/redirects.json`. Se o novo site for hospedado em Netlify/Cloudflare, os 301 reais são lidos de `_redirects`.
+4. **Redirecionamentos:** testar as URLs antigas listadas em `src/data/redirects.json`. Em produção (HostGator) elas respondem com 301 pelo `.htaccess`; o teste pós-deploy confere uma delas a cada publicação.
 5. **Rich results:** validar uma página de produto e um guia em https://search.google.com/test/rich-results.
 6. **Core Web Vitals:** rodar o PageSpeed Insights na página inicial e em uma página de produto; a meta é ≥ 90 em mobile.
 7. **Conteúdo contínuo:** publicar um guia novo por mês (dúvidas reais do balcão), atualizar as páginas de produto a cada catálogo e manter os guias com `updated` quando revisados.

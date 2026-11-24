@@ -84,7 +84,7 @@ export function layout(ctx, page, body) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${fullTitle}</title>
 <meta name="description" content="${page.description}">
-${page.noindex ? html`<meta name="robots" content="noindex,follow">` : html`<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">`}
+${ctx.staging ? html`<meta name="robots" content="noindex,nofollow">` : page.noindex ? html`<meta name="robots" content="noindex,follow">` : html`<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">`}
 <link rel="canonical" href="${canonical}">
 <meta name="author" content="${site.brand}">
 <meta name="theme-color" content="#2d2c4d">
