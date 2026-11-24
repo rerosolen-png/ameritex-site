@@ -172,6 +172,26 @@ for (const file of htmlFiles) {
   }
 }
 
+// .htaccess (Apache/HostGator): todo redirecionamento precisa apontar para uma página existente
+const htaccessFile = path.join(DIST, '.htaccess');
+let htaccessRules = 0;
+if (fs.existsSync(htaccessFile)) {
+  const htaccess = fs.readFileSync(htaccessFile, 'utf8');
+  if (!/RewriteEngine On/.test(htaccess)) errors.push('.htaccess: falta RewriteEngine On');
+  if (!/ErrorDocument 404 \/404\.html/.test(htaccess)) errors.push('.htaccess: falta ErrorDocument 404');
+  for (const match of htaccess.matchAll(/^\s*RewriteRule\s+(\S+)\s+https?:\/\/[^/\s]+(\/[^\s%]*)\s+\[R=301/gm)) {
+    htaccessRules += 1;
+    try {
+      new RegExp(match[1]);
+    } catch (e) {
+      errors.push(`.htaccess: padrão inválido "${match[1]}"`);
+    }
+    if (!resolveInternal(match[2])) errors.push(`.htaccess: redirecionamento para destino inexistente: ${match[2]}`);
+  }
+} else if (!BASE) {
+  errors.push('.htaccess não foi gerado (esperado quando o site fica na raiz do domínio)');
+}
+
 // imagens grandes demais (performance)
 for (const file of listFiles(path.join(DIST, 'assets', 'img'))) {
   const kb = fs.statSync(file).size / 1024;
@@ -180,5 +200,5 @@ for (const file of listFiles(path.join(DIST, 'assets', 'img'))) {
 
 for (const w of warnings) console.warn(`⚠ ${w}`);
 for (const e of errors) console.error(`✖ ${e}`);
-console.log(`\n${htmlFiles.length} páginas verificadas · ${errors.length} erro(s) · ${warnings.length} aviso(s)${BASE ? ` · caminho base ${BASE}` : ''}`);
+console.log(`\n${htmlFiles.length} páginas verificadas · ${htaccessRules} regras 301 no .htaccess · ${errors.length} erro(s) · ${warnings.length} aviso(s)${BASE ? ` · caminho base ${BASE}` : ''}`);
 process.exit(errors.length ? 1 : 0);

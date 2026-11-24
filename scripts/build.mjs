@@ -19,6 +19,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { loadContent, ContentError } from '../src/lib/content.mjs';
 import { renderPages } from '../src/templates/index.mjs';
+import { renderHtaccess } from '../src/lib/htaccess.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.join(ROOT, 'src');
@@ -77,8 +78,12 @@ export async function build({ quiet = false } = {}) {
   // URL pública: por padrão a de site.json; o deploy pode sobrescrever com SITE_URL
   // (ex.: https://usuario.github.io/ameritex-site antes de o domínio próprio estar ativo).
   // Quando a URL tem um caminho (/ameritex-site), todos os links absolutos recebem esse prefixo.
-  const siteUrl = (process.env.SITE_URL || content.site.siteUrl).replace(/\/+$/, '');
+  const productionUrl = content.site.siteUrl.replace(/\/+$/, '');
+  const siteUrl = (process.env.SITE_URL || productionUrl).replace(/\/+$/, '');
   content.site.siteUrl = siteUrl;
+  // Prévia: build publicado em um endereço diferente do de produção (ex.: github.io).
+  // Recebe noindex para não disputar posição com o domínio oficial nos buscadores.
+  const staging = siteUrl !== productionUrl;
   const basePath = new URL(siteUrl).pathname.replace(/\/+$/, '');
   const applyBase = (htmlText) => (basePath ? htmlText.replace(/=(["'])\/(?!\/)/g, `=$1${basePath}/`) : htmlText);
 
@@ -86,6 +91,7 @@ export async function build({ quiet = false } = {}) {
     ...content,
     assets: { css: `/assets/css/${cssName}`, js: `/assets/js/${jsName}` },
     buildDate,
+    staging,
     /** Resolve uma imagem de src/assets/img para { src, width, height }. */
     img(rel) {
       const meta = content.images.get(rel);
@@ -104,10 +110,14 @@ export async function build({ quiet = false } = {}) {
     writeFile(rel.replace(/^\//, ''), applyBase(page.html));
   }
 
-  // 5. redirecionamentos das URLs antigas (páginas com meta refresh + arquivo _redirects)
+  // 5. redirecionamentos das URLs antigas:
+  //    - página com meta refresh para cada URL exata (funciona em qualquer hospedagem estática)
+  //    - _redirects (Netlify / Cloudflare Pages) e .htaccess (Apache / HostGator) com 301 de servidor
   const site = content.site;
   const redirectsFile = path.join(SRC, 'data', 'redirects.json');
   let redirectCount = 0;
+  let exactRedirects = {};
+  let prefixRedirects = {};
   if (fs.existsSync(redirectsFile)) {
     const redirects = JSON.parse(fs.readFileSync(redirectsFile, 'utf8'));
     const lines = [];
@@ -121,8 +131,20 @@ export async function build({ quiet = false } = {}) {
       lines.push(`${from} ${to} 301`);
       redirectCount += 1;
     }
+    // prefixos: qualquer URL que comece com o trecho indicado (só valem com redirecionamento de servidor)
+    prefixRedirects = redirects._prefixos || {};
+    for (const [from, to] of Object.entries(prefixRedirects)) {
+      if (!seen.has(to)) throw new ContentError(`redirects.json: destino "${to}" não existe`);
+      const clash = [...seen].find((url) => url.startsWith(from));
+      if (clash) throw new ContentError(`redirects.json: o prefixo "${from}" engoliria a página ${clash}`);
+      lines.push(`${from}* ${to} 301`);
+    }
     if (lines.length) writeFile('_redirects', `${lines.join('\n')}\n`);
+    exactRedirects = Object.fromEntries(Object.entries(redirects).filter(([from]) => !from.startsWith('_')));
   }
+
+  // .htaccess só faz sentido quando o site fica na raiz do domínio (sem caminho base)
+  if (!basePath) writeFile('.htaccess', renderHtaccess({ siteUrl, redirects: exactRedirects, prefixes: prefixRedirects }));
 
   // 6. sitemap, robots e manifest (dependem da URL pública, por isso são gerados aqui)
   const lastmod = buildDate.toISOString().slice(0, 10);
@@ -147,13 +169,13 @@ export async function build({ quiet = false } = {}) {
     ],
   };
   writeFile('manifest.webmanifest', `${JSON.stringify(manifest, null, 2)}\n`);
-  writeFile('.build-meta.json', `${JSON.stringify({ siteUrl, basePath, buildDate: buildDate.toISOString(), pages: pages.length }, null, 2)}\n`);
+  writeFile('.build-meta.json', `${JSON.stringify({ siteUrl, basePath, staging, buildDate: buildDate.toISOString(), pages: pages.length }, null, 2)}\n`);
 
   const ms = Date.now() - started;
   log(`✔ build concluído em ${ms} ms`);
   log(`  páginas: ${pages.length} | redirecionamentos: ${redirectCount} | imagens: ${imgCount} | arquivos públicos: ${publicCount}`);
   log(`  css: ${cssName} | js: ${jsName}`);
-  log(`  url pública: ${siteUrl}${basePath ? ` (caminho base ${basePath})` : ''}`);
+  log(`  url pública: ${siteUrl}${basePath ? ` (caminho base ${basePath})` : ''}${staging ? ' · PRÉVIA (noindex)' : ''}`);
   return { pages: pages.length, ms };
 }
 

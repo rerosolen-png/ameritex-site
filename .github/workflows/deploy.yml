@@ -1,4 +1,8 @@
-name: Deploy (GitHub Pages)
+name: Prévia (GitHub Pages)
+
+# Publica a prévia do site em https://rerosolen-png.github.io/ameritex-site/.
+# Como o endereço difere do de produção (src/data/site.json), o build marca as
+# páginas como noindex. A produção é publicada por deploy-hostgator.yml.
 
 on:
   push:

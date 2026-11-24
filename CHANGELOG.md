@@ -5,6 +5,18 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e 
 
 ## [Unreleased]
 
+### Adicionado
+
+- Deploy de produção para a HostGator por FTPS (`.github/workflows/deploy-hostgator.yml`), com simulação (dry run), conferência de configuração e teste pós-deploy. Ativado pela variável `HOSTGATOR_DEPLOY`.
+- `.htaccess` gerado pelo build (`src/lib/htaccess.mjs`): HTTPS, www → sem www, redirecionamentos 301 das URLs antigas, página 404, cache, compressão e bloqueio de arquivos ocultos.
+- Redirecionamentos por prefixo (`_prefixos` em `redirects.json`) para `/produto/…`, `/categoria-produto/…` e `/produto-tag/…`, além das páginas do WooCommerce (`/loja/`, `/carrinho/`, `/finalizar-compra/`, `/minha-conta/`).
+- Validação dos destinos do `.htaccess` em `scripts/check.mjs`.
+
+### Alterado
+
+- A prévia no GitHub Pages passa a ser marcada como `noindex` quando o endereço difere do de produção, para não concorrer com `ameritex.com.br` nos buscadores.
+- `docs/DEPLOY.md` reescrito: produção na HostGator, prévia no GitHub Pages, backup do WordPress e como voltar atrás.
+
 ## [1.0.0] – 2026-10-27
 
 ### Adicionado
