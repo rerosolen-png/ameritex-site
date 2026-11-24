@@ -87,9 +87,19 @@ export async function build({ quiet = false } = {}) {
   const basePath = new URL(siteUrl).pathname.replace(/\/+$/, '');
   const applyBase = (htmlText) => (basePath ? htmlText.replace(/=(["'])\/(?!\/)/g, `=$1${basePath}/`) : htmlText);
 
+  // Medição (Analytics, Ads, Meta Pixel): só em produção e só se houver algum ID em site.json.
+  // A prévia nunca mede, para não misturar visitas de teste com as reais.
+  const t = content.site.tracking;
+  const tracking = { ...t, hasAnalytics: Boolean(t.ga4), hasMarketing: Boolean(t.ads || t.pixel) };
+  tracking.enabled = !staging && (tracking.hasAnalytics || tracking.hasMarketing);
+  const trackingJs = fs.readFileSync(path.join(SRC, 'scripts', 'tracking.js'), 'utf8');
+  const trackingName = `tracking.${hashOf(trackingJs)}.js`;
+  if (tracking.enabled) writeFile(`assets/js/${trackingName}`, trackingJs);
+
   const ctx = {
     ...content,
-    assets: { css: `/assets/css/${cssName}`, js: `/assets/js/${jsName}` },
+    assets: { css: `/assets/css/${cssName}`, js: `/assets/js/${jsName}`, tracking: `/assets/js/${trackingName}` },
+    tracking,
     buildDate,
     staging,
     /** Resolve uma imagem de src/assets/img para { src, width, height }. */
@@ -176,6 +186,8 @@ export async function build({ quiet = false } = {}) {
   log(`  páginas: ${pages.length} | redirecionamentos: ${redirectCount} | imagens: ${imgCount} | arquivos públicos: ${publicCount}`);
   log(`  css: ${cssName} | js: ${jsName}`);
   log(`  url pública: ${siteUrl}${basePath ? ` (caminho base ${basePath})` : ''}${staging ? ' · PRÉVIA (noindex)' : ''}`);
+  const tools = [t.ga4 && 'Analytics', t.ads && 'Google Ads', t.pixel && 'Meta Pixel'].filter(Boolean);
+  log(`  medição: ${tracking.enabled ? `${tools.join(', ')} (com aviso de cookies)` : tools.length ? 'desligada na prévia' : 'nenhum ID configurado'}`);
   return { pages: pages.length, ms };
 }
 

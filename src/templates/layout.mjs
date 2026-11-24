@@ -4,7 +4,7 @@
  */
 
 import { html, raw, jsonForScript } from '../lib/html.mjs';
-import { siteHeader, siteFooter, whatsappFloat, lightbox } from './components.mjs';
+import { siteHeader, siteFooter, whatsappFloat, lightbox, consentBanner, trackingScript } from './components.mjs';
 
 export function organizationLd(ctx) {
   const { site } = ctx;
@@ -86,6 +86,9 @@ export function layout(ctx, page, body) {
 <meta name="description" content="${page.description}">
 ${ctx.staging ? html`<meta name="robots" content="noindex,nofollow">` : page.noindex ? html`<meta name="robots" content="noindex,follow">` : html`<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">`}
 <link rel="canonical" href="${canonical}">
+${site.verification.google ? html`<meta name="google-site-verification" content="${site.verification.google}">` : ''}
+${site.verification.bing ? html`<meta name="msvalidate.01" content="${site.verification.bing}">` : ''}
+${site.verification.facebookDomain ? html`<meta name="facebook-domain-verification" content="${site.verification.facebookDomain}">` : ''}
 <meta name="author" content="${site.brand}">
 <meta name="theme-color" content="#2d2c4d">
 <meta property="og:locale" content="pt_BR">
@@ -121,7 +124,9 @@ ${body}
 ${siteFooter(ctx)}
 ${whatsappFloat(ctx)}
 ${lightbox()}
+${consentBanner(ctx)}
 <script src="${assets.js}" defer></script>
+${trackingScript(ctx)}
 </body>
 </html>
 `;

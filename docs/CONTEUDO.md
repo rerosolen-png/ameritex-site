@@ -15,6 +15,8 @@ Todo o conteúdo fica em arquivos de texto dentro de `src/`. Não é preciso mex
 | `openingHours` | Horário de atendimento (texto livre). Vazio = não exibe |
 | `social` | URLs do Instagram, Facebook e LinkedIn. Vazias = não exibe |
 | `catalogFile`, `catalogYear` | Caminho do PDF em `public/` e ano do catálogo (aparece nos botões) |
+| `tracking` | IDs do Google Analytics (`ga4Id`), Google Ads (`googleAdsId` e `googleAdsConversions`) e Meta Pixel (`metaPixelId`). Vazio = desligado. Ver [`MARKETING.md`](MARKETING.md) |
+| `verification` | Códigos de verificação por meta tag do Google, Bing e Meta. Opcionais |
 | `nav[]` | Itens do menu principal. O item com `"children": "produtos"` recebe o submenu com todas as linhas |
 | `audiences[]` | Lista de públicos (página inicial e formulário de contato) |
 

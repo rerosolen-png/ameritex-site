@@ -47,6 +47,32 @@ export function loadContent(srcDir) {
   requireImage(site.logo.dark, 'site.json logo.dark');
   requireImage(site.ogImage, 'site.json ogImage');
 
+  // ---- medição (opcional): valida o formato dos IDs para um erro de digitação não ir a produção
+  const tr = site.tracking || {};
+  const conv = tr.googleAdsConversions || {};
+  const convKeys = ['whatsapp', 'lead', 'phone', 'catalog'];
+  const idRules = [
+    ['tracking.ga4Id', tr.ga4Id, /^G-[A-Z0-9]{8,12}$/, 'G-XXXXXXXXXX'],
+    ['tracking.googleAdsId', tr.googleAdsId, /^AW-\d{8,13}$/, 'AW-1234567890'],
+    ['tracking.metaPixelId', tr.metaPixelId, /^\d{10,20}$/, 'somente números'],
+    ...convKeys.map((k) => [`tracking.googleAdsConversions.${k}`, conv[k], /^AW-\d{8,13}\/[A-Za-z0-9_-]{6,40}$/, 'AW-1234567890/AbCdEfGhIj']),
+  ];
+  for (const [name, value, pattern, example] of idRules) {
+    if (value && !pattern.test(value)) throw new ContentError(`site.json: ${name} com formato inválido ("${value}"). Esperado: ${example}`);
+  }
+  if (convKeys.some((k) => conv[k]) && !tr.googleAdsId) throw new ContentError('site.json: há conversões do Google Ads preenchidas, mas falta tracking.googleAdsId');
+  site.tracking = {
+    ga4: tr.ga4Id || '',
+    ads: tr.googleAdsId || '',
+    pixel: tr.metaPixelId || '',
+    conv: Object.fromEntries(convKeys.map((k) => [k, conv[k] || ''])),
+  };
+  const ver = site.verification || {};
+  site.verification = { google: ver.google || '', bing: ver.bing || '', facebookDomain: ver.facebookDomain || '' };
+  for (const [k, v] of Object.entries(site.verification)) {
+    if (v && !/^[A-Za-z0-9_-]{8,120}$/.test(v)) throw new ContentError(`site.json: verification.${k} deve conter só o código, sem a tag HTML`);
+  }
+
   // ---- produtos (categorias)
   const produtos = readJson(path.join(dataDir, 'produtos.json'));
   const slugs = new Set();

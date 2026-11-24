@@ -80,6 +80,7 @@ if (!fs.existsSync(DIST)) {
 const htmlFiles = listFiles(DIST, '.html');
 const sitemap = fs.existsSync(path.join(DIST, 'sitemap.xml')) ? fs.readFileSync(path.join(DIST, 'sitemap.xml'), 'utf8') : '';
 const titles = new Map();
+let trackedPages = 0;
 
 for (const file of htmlFiles) {
   const url = toUrl(file);
@@ -130,6 +131,15 @@ for (const file of htmlFiles) {
 
   const h1s = html.match(/<h1[\s>]/gi) || [];
   if (h1s.length !== 1) err(`${h1s.length} <h1> (esperado 1)`);
+
+  // medição (LGPD): o script e o aviso de cookies andam juntos, e nada de terceiros fica fixo no HTML
+  const hasTracking = /<script[^>]*\/assets\/js\/tracking\.[0-9a-f]+\.js/.test(html);
+  const hasBanner = /<section[^>]*\sdata-consent[\s>]/.test(html);
+  if (hasTracking !== hasBanner) err('script de medição e aviso de cookies precisam aparecer juntos');
+  if (hasTracking) trackedPages += 1;
+  if (/googletagmanager\.com|google-analytics\.com|connect\.facebook\.net/.test(html)) {
+    err('script de medição fixo no HTML: ele só pode ser carregado por tracking.js, depois do consentimento');
+  }
 
   const imgs = html.match(/<img\b[^>]*>/gi) || [];
   for (const tag of imgs) {
@@ -200,5 +210,5 @@ for (const file of listFiles(path.join(DIST, 'assets', 'img'))) {
 
 for (const w of warnings) console.warn(`⚠ ${w}`);
 for (const e of errors) console.error(`✖ ${e}`);
-console.log(`\n${htmlFiles.length} páginas verificadas · ${htaccessRules} regras 301 no .htaccess · ${errors.length} erro(s) · ${warnings.length} aviso(s)${BASE ? ` · caminho base ${BASE}` : ''}`);
+console.log(`\n${htmlFiles.length} páginas verificadas · ${htaccessRules} regras 301 no .htaccess · ${trackedPages} com medição · ${errors.length} erro(s) · ${warnings.length} aviso(s)${BASE ? ` · caminho base ${BASE}` : ''}`);
 process.exit(errors.length ? 1 : 0);

@@ -68,6 +68,24 @@
   "ogImage": "brand/og-default.jpg",
   "catalogFile": "/downloads/catalogo-ameritex-2026.pdf",
   "catalogYear": 2026,
+  "tracking": {
+    "_nota": "IDs de medição. Campo vazio = ferramenta desligada. Com tudo vazio, o site não mostra aviso de cookies. Ver docs/MARKETING.md.",
+    "ga4Id": "G-01HC7D1D4E",
+    "googleAdsId": "",
+    "googleAdsConversions": {
+      "whatsapp": "",
+      "lead": "",
+      "phone": "",
+      "catalog": ""
+    },
+    "metaPixelId": ""
+  },
+  "verification": {
+    "_nota": "Códigos de verificação de propriedade (meta tags). Opcionais: a verificação por DNS dispensa o preenchimento.",
+    "google": "",
+    "bing": "",
+    "facebookDomain": ""
+  },
   "nav": [
     { "label": "Início", "href": "/" },
     { "label": "Produtos", "href": "/produtos/", "children": "produtos" },

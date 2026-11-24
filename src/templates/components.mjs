@@ -156,10 +156,46 @@ export function siteFooter(ctx) {
   </div>
   <div class="site-footer__bottom">
     <div class="container">
-      <p>© ${year} ${site.legalName} · CNPJ ${site.cnpj} · Todos os direitos reservados. AMERITEX® é marca registrada.</p>
+      <p>© ${year} ${site.legalName} · CNPJ ${site.cnpj} · Todos os direitos reservados. AMERITEX® é marca registrada.${ctx.tracking.enabled ? html` · <button type="button" class="link-button" data-consent-open>Preferências de cookies</button>` : ''}</p>
     </div>
   </div>
 </footer>`;
+}
+
+/**
+ * Aviso de cookies (LGPD). Só existe quando há ferramentas de medição configuradas.
+ * Aceitar e recusar têm o mesmo destaque; a escolha pode ser revista pelo rodapé.
+ */
+export function consentBanner(ctx) {
+  const t = ctx.tracking;
+  if (!t.enabled) return '';
+  const marketingTools = [t.ads && 'Google Ads', t.pixel && 'Meta'].filter(Boolean).join(' e ');
+  return html`<section class="consent" data-consent hidden aria-label="Aviso de cookies">
+  <div class="consent__inner">
+    <div class="consent__text">
+      <p class="consent__title">Cookies e privacidade</p>
+      <p>Usamos cookies para entender como o site é usado${t.hasMarketing ? ' e medir o resultado dos nossos anúncios' : ''}. Você escolhe o que permitir e pode mudar de ideia quando quiser. Detalhes na <a href="/politica-de-privacidade/">política de privacidade</a>.</p>
+      <div class="consent__options" data-consent-options hidden>
+        <label class="consent__option"><input type="checkbox" checked disabled> <span><strong>Necessários</strong>: funcionamento do site. Sempre ativos.</span></label>
+        ${t.hasAnalytics ? html`<label class="consent__option"><input type="checkbox" data-consent-analytics> <span><strong>Análise</strong>: estatísticas de visitas (Google Analytics).</span></label>` : ''}
+        ${t.hasMarketing ? html`<label class="consent__option"><input type="checkbox" data-consent-marketing> <span><strong>Marketing</strong>: medição de anúncios (${marketingTools}).</span></label>` : ''}
+      </div>
+    </div>
+    <div class="consent__actions">
+      <button type="button" class="btn btn--primary btn--sm" data-consent-accept>Aceitar todos</button>
+      <button type="button" class="btn btn--outline btn--sm" data-consent-reject>Somente necessários</button>
+      <button type="button" class="btn btn--ghost btn--sm" data-consent-customize aria-expanded="false">Personalizar</button>
+      <button type="button" class="btn btn--primary btn--sm" data-consent-save hidden>Salvar escolhas</button>
+    </div>
+  </div>
+</section>`;
+}
+
+/** Script de medição: os IDs vão em atributos data-*; nada de terceiros carrega antes do consentimento. */
+export function trackingScript(ctx) {
+  const t = ctx.tracking;
+  if (!t.enabled) return '';
+  return html`<script src="${ctx.assets.tracking}" defer data-ga4="${t.ga4}" data-ads="${t.ads}" data-pixel="${t.pixel}" data-conv-whatsapp="${t.conv.whatsapp}" data-conv-lead="${t.conv.lead}" data-conv-phone="${t.conv.phone}" data-conv-catalog="${t.conv.catalog}"></script>`;
 }
 
 export function whatsappFloat(ctx) {

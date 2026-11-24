@@ -48,7 +48,7 @@ O site antigo tinha nove produtos genéricos ("Toalha Mesa Impermeavel", "Tecido
 
 ## 4. Checklist pós-lançamento
 
-1. **Google Search Console:** adicionar a propriedade `ameritex.com.br` (verificação por DNS), enviar `https://ameritex.com.br/sitemap.xml`, pedir indexação das páginas principais e acompanhar "Páginas" e "Melhorias" por algumas semanas.
+1. **Google Search Console:** propriedade de domínio `ameritex.com.br` verificada por DNS e sitemap `https://ameritex.com.br/sitemap.xml` enviado. Acompanhar "Páginas" e "Melhorias" por algumas semanas e pedir indexação das páginas principais. Analytics, Ads e Meta Pixel: ver [`MARKETING.md`](MARKETING.md).
 2. **Bing Webmaster Tools:** importar do Search Console.
 3. **Google Business Profile:** criar/atualizar o perfil da empresa com o mesmo nome, endereço e telefone do site (NAP consistente), categoria "Importador" / "Atacadista de tecidos", fotos e link para o site. Depois, preencher `social` em `site.json` com os perfis e o build inclui em `sameAs`.
 4. **Redirecionamentos:** testar as URLs antigas listadas em `src/data/redirects.json`. Em produção (HostGator) elas respondem com 301 pelo `.htaccess`; o teste pós-deploy confere uma delas a cada publicação.

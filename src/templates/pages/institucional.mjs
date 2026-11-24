@@ -279,7 +279,7 @@ ${ctaBand(ctx, {})}
 }
 
 export function renderPrivacidade(ctx) {
-  const { site } = ctx;
+  const { site, tracking } = ctx;
   const url = '/politica-de-privacidade/';
   const title = 'Política de privacidade | Ameritex';
   const description = `Saiba como a Ameritex trata os dados pessoais enviados pelo site, formulários e WhatsApp, em conformidade com a LGPD (Lei nº 13.709/2018).`;
@@ -304,11 +304,21 @@ export function renderPrivacidade(ctx) {
       <li><strong>Dados de contato</strong> informados voluntariamente por você no formulário de orçamento, por e-mail ou pelo WhatsApp: nome, empresa, cidade, telefone, e-mail e o conteúdo da mensagem.</li>
       <li><strong>Dados de navegação</strong> coletados de forma automática pelo servidor de hospedagem, como endereço IP, data e hora de acesso, páginas visitadas e tipo de navegador, utilizados exclusivamente para segurança e estatísticas agregadas.</li>
     </ul>
-    <p>O site não utiliza cookies de rastreamento publicitário. Fontes tipográficas são carregadas do Google Fonts e o mapa da página de contato é fornecido pelo Google Maps; esses serviços podem registrar o seu endereço IP conforme suas próprias políticas.</p>
+    <p>Fontes tipográficas são carregadas do Google Fonts e o mapa da página de contato é fornecido pelo Google Maps; esses serviços podem registrar o seu endereço IP conforme suas próprias políticas.</p>
+    ${tracking.enabled
+      ? html`<h3 id="cookies">Cookies e ferramentas de medição</h3>
+    <p>Com a sua autorização, dada no aviso de cookies exibido na primeira visita, o site utiliza as ferramentas abaixo. Nenhuma delas é carregada antes da sua escolha, e recusar não limita o uso do site.</p>
+    <ul>
+      ${tracking.ga4 ? html`<li><strong>Google Analytics</strong> (categoria Análise): estatísticas de visitas, como páginas vistas, origem do acesso e cliques nos botões de contato. Cookies <code>_ga</code> e <code>_ga_*</code>, com duração de até 2 anos.</li>` : ''}
+      ${tracking.ads ? html`<li><strong>Google Ads</strong> (categoria Marketing): mede quais anúncios geraram contatos. Cookies <code>_gcl_*</code>, com duração de até 90 dias.</li>` : ''}
+      ${tracking.pixel ? html`<li><strong>Meta Pixel</strong> (categoria Marketing): mede o resultado de anúncios no Facebook e no Instagram. Cookies <code>_fbp</code> e <code>_fbc</code>, com duração de até 90 dias.</li>` : ''}
+    </ul>
+    <p>Essas ferramentas recebem dados de navegação, como endereço IP, identificadores de cookie e páginas visitadas. O conteúdo do formulário de orçamento não é enviado a elas. Você pode rever a sua escolha a qualquer momento em <button type="button" class="link-button" data-consent-open>Preferências de cookies</button>, também disponível no rodapé de todas as páginas.</p>`
+      : html`<p>O site não utiliza cookies de análise nem de publicidade.</p>`}
     <h2>3. Finalidade e base legal</h2>
-    <p>Usamos os dados de contato para responder às suas solicitações, elaborar orçamentos, emitir documentos fiscais e manter o relacionamento comercial (execução de contrato e procedimentos preliminares, art. 7º, V, da LGPD, e legítimo interesse, art. 7º, IX). Não vendemos nem cedemos seus dados a terceiros para fins de marketing.</p>
+    <p>Usamos os dados de contato para responder às suas solicitações, elaborar orçamentos, emitir documentos fiscais e manter o relacionamento comercial (execução de contrato e procedimentos preliminares, art. 7º, V, da LGPD, e legítimo interesse, art. 7º, IX). Não vendemos nem cedemos seus dados a terceiros para fins de marketing.${tracking.enabled ? ' O uso de cookies de análise e de marketing depende do seu consentimento (art. 7º, I), que pode ser revogado a qualquer momento.' : ''}</p>
     <h2>4. Compartilhamento</h2>
-    <p>Os dados podem ser compartilhados apenas com prestadores de serviço necessários à operação (transportadoras, provedores de e-mail e hospedagem, serviços de mensagens) e com autoridades quando exigido por lei.</p>
+    <p>Os dados podem ser compartilhados apenas com prestadores de serviço necessários à operação (transportadoras, provedores de e-mail e hospedagem, serviços de mensagens) e com autoridades quando exigido por lei.${tracking.enabled ? ` Os dados de navegação coletados com o seu consentimento são tratados por ${[(tracking.ga4 || tracking.ads) && 'Google', tracking.pixel && 'Meta'].filter(Boolean).join(' e ')}, que podem armazená-los em servidores fora do Brasil, conforme as políticas de privacidade dessas empresas.` : ''}</p>
     <h2>5. Armazenamento e segurança</h2>
     <p>Mantemos os dados pelo tempo necessário ao atendimento da solicitação e ao cumprimento de obrigações legais e fiscais. Adotamos medidas técnicas e administrativas razoáveis para proteger os dados contra acesso não autorizado, perda ou alteração.</p>
     <h2>6. Seus direitos</h2>
