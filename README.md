@@ -47,6 +47,7 @@ Site institucional e catálogo online da **Ameritex Comércio, Importação e Ex
 │   │   └── redirects.json# URLs do site antigo → novas
 │   ├── lib/              # Utilitários: html seguro, markdown, imagens, conteúdo, .htaccess
 │   ├── scripts/main.js   # JavaScript do site
+│   ├── scripts/tracking.js # Analytics, Ads e Meta Pixel, carregados só após o consentimento
 │   ├── styles/main.css   # Folha de estilo (tokens de marca em :root)
 │   └── templates/        # Templates de página (layout, componentes, páginas)
 ├── CHANGELOG.md
@@ -88,6 +89,7 @@ Guia completo em [`docs/CONTEUDO.md`](docs/CONTEUDO.md). Resumo:
 - **Guias (artigos):** crie um arquivo em `src/content/guias/` com o cabeçalho `title`, `description`, `date`, `image`, `imageAlt` e `category`.
 - **Imagens:** coloque em `src/assets/img/...` (JPEG ≤ 350 KB, largura 800–1200 px) e referencie pelo caminho relativo.
 - **Catálogo PDF:** substitua `public/downloads/catalogo-ameritex-2026.pdf` e, se o ano mudar, ajuste `catalogYear` e `catalogFile` em `site.json`.
+- **Analytics, Google Ads, Meta Pixel e verificações de propriedade:** blocos `tracking` e `verification` de `site.json`. Guia em [`docs/MARKETING.md`](docs/MARKETING.md).
 
 Toda alteração é validada por `npm test`. Se algo estiver inconsistente (imagem inexistente, título longo demais, link quebrado), o build falha com uma mensagem clara e o deploy não acontece.
 
@@ -99,6 +101,10 @@ Cada merge em `main` publica em dois lugares:
 - **Prévia** – GitHub Pages (workflow [`deploy.yml`](.github/workflows/deploy.yml)), sem indexação nos buscadores.
 
 Configuração inicial, backup do site antigo, `.htaccess`, como voltar atrás e alternativas de hospedagem em [`docs/DEPLOY.md`](docs/DEPLOY.md).
+
+## Medição e marketing
+
+Google Analytics 4, Google Ads e Meta Pixel são ligados preenchendo os IDs em `src/data/site.json`. O site mostra um aviso de cookies e só carrega essas ferramentas depois do consentimento do visitante, como exige a LGPD. Eventos medidos, onde obter cada ID e como testar em [`docs/MARKETING.md`](docs/MARKETING.md).
 
 ## SEO
 

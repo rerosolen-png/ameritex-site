@@ -114,6 +114,12 @@
         get('mensagem'),
       ].filter(function (l) { return l !== null; });
       var url = 'https://wa.me/' + form.getAttribute('data-wa') + '?text=' + encodeURIComponent(lines.join('\n'));
+      // avisa o módulo de medição (tracking.js), sem dados pessoais
+      try {
+        document.dispatchEvent(new CustomEvent('ameritex:lead', { detail: { produto: get('produto'), tipo: get('tipo') } }));
+      } catch (err) {
+        /* navegadores sem CustomEvent: segue sem medir */
+      }
       window.open(url, '_blank', 'noopener');
     });
   }

@@ -1645,6 +1645,96 @@ button {
 .link-list a {
   font-weight: 600;
 }
+.link-button {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+.site-footer .link-button:hover {
+  color: #fff;
+}
+.prose .link-button {
+  color: var(--blue-700);
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ aviso de cookies (LGPD) */
+.consent {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 70;
+  background: #fff;
+  border-top: 3px solid var(--blue);
+  box-shadow: 0 -8px 30px rgba(29, 29, 43, 0.18);
+  padding: 1rem var(--gutter);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+.consent__inner {
+  max-width: var(--container);
+  margin-inline: auto;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .consent__inner {
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+  }
+}
+.consent__title {
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 0.25rem;
+}
+.consent__text p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.consent__text .consent__title {
+  font-size: 1rem;
+  color: var(--navy);
+}
+.consent__options {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+.consent__option {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.consent__option input {
+  margin-top: 0.3em;
+  accent-color: var(--blue);
+  flex: none;
+}
+.consent__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--navy);
+  border-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.btn--ghost:hover {
+  background: var(--navy-100);
+}
 
 /* ------------------------------------------------------------------ impressão */
 @media print {
@@ -1654,7 +1744,8 @@ button {
   .cta-band,
   .nav-toggle,
   .filter,
-  .side-card {
+  .side-card,
+  .consent {
     display: none !important;
   }
   body {

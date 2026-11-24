@@ -7,6 +7,10 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e 
 
 ### Adicionado
 
+- Medição com consentimento (LGPD): aviso de cookies com escolha por categoria e `src/scripts/tracking.js`, que carrega Google Analytics 4, Google Ads (Consent Mode v2) e Meta Pixel só depois da autorização. IDs nos blocos `tracking` e `verification` de `site.json`, com validação de formato no build.
+- Eventos de conversão: clique no WhatsApp, telefone e e-mail, envio do formulário de orçamento, download do catálogo e visualização de produto.
+- Política de privacidade passa a listar automaticamente as ferramentas de medição ligadas; link "Preferências de cookies" no rodapé.
+- Meta tags de verificação de propriedade (Google, Bing e Meta) e guia `docs/MARKETING.md`.
 - Deploy de produção para a HostGator por FTPS (`.github/workflows/deploy-hostgator.yml`), com simulação (dry run), conferência de configuração e teste pós-deploy. Ativado pela variável `HOSTGATOR_DEPLOY`.
 - `.htaccess` gerado pelo build (`src/lib/htaccess.mjs`): HTTPS, www → sem www, redirecionamentos 301 das URLs antigas, página 404, cache, compressão e bloqueio de arquivos ocultos.
 - Redirecionamentos por prefixo (`_prefixos` em `redirects.json`) para `/produto/…`, `/categoria-produto/…` e `/produto-tag/…`, além das páginas do WooCommerce (`/loja/`, `/carrinho/`, `/finalizar-compra/`, `/minha-conta/`).
